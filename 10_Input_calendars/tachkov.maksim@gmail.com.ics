@@ -1,0 +1,399 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:tachkov.maksim@gmail.com
+X-WR-TIMEZONE:Europe/Moscow
+BEGIN:VEVENT
+DTSTART:20220831T121500Z
+DTEND:20220831T171500Z
+DTSTAMP:20221208T221506Z
+UID:19mpaat4vbc5aph5gdo7lo65ii@google.com
+CREATED:20220903T154426Z
+DESCRIPTION:
+LAST-MODIFIED:20220903T154426Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:sss
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221201T070000Z
+DTEND:20221201T083000Z
+DTSTAMP:20221208T221506Z
+UID:9crl0alv3o600chs01dhnpp0h0@google.com
+CREATED:20221124T120526Z
+LAST-MODIFIED:20221124T120526Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:АРСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221124T153000Z
+DTEND:20221124T160000Z
+DTSTAMP:20221208T221506Z
+UID:a_l.AtiR_B0ScZzU4EmVnig.ol
+CREATED:20221123T175410Z
+DESCRIPTION:Alexander Bibin приглашает вас на запланированную конференцию: 
+ Zoom.\n\nПодключиться к конференции Zoom\nhttps://us04web.zoom.us/j/4760218
+ 789?pwd=ZllXdVhxSmVFNDRhRXJTd1ZDUVEydz09\n\nИдентификатор конференции: 476 
+ 021 8789\nКод доступа: 124446\n\n  ________________________________\n  Соде
+ ржащиеся в настоящем сообщении сведения и вложенные файлы являются конфиден
+ циальными\, могут содержать коммерческую тайну\, принадлежащую группе лиц Е
+ ВРАЗ\, и предназначены только для указанных получателей. Их копирование\, х
+ ранение\, обработка и передача без согласия компании группы лиц ЕВРАЗ запре
+ щается. Получатель принимает на себя любые расходы\, убытки\, требования и/
+ или иски в связи с нарушением получателем указанных требований о конфиденци
+ альности. Если Вы получили данное сообщение по ошибке\, пожалуйста\, немедл
+ енно проинформируйте об этом отправителя данного письма и уничтожьте это эл
+ ектронное письмо\, все его копии и прикрепленные к нему файлы.\n  Настоящее
+  сообщение содержит частное мнение автора сообщения\, не накладывает на ком
+ пании группы лиц ЕВРАЗ никаких обязательств и не является офертой\, приглаш
+ ением делать оферты\, принятием оферты\, заверением об обстоятельствах\, га
+ рантией\, обязательством возместить потери\, заключением предварительного д
+ оговора или договора в соответствии с любым применимым законодательством от
+  имени компании группы лиц ЕВРАЗ. Ни одно из положений данного письма не мо
+ жет служить основанием для любого судебного разбирательства в отношении ком
+ паний группы лиц ЕВРАЗ в любой юрисдикции.\n  Any and all information conta
+ ined in this email and/or attachments thereto is confidential\, may constit
+ ute trade secrets owned by EVRAZ Group entities and is destined for intende
+ d recipients only. Its copying\, archiving\, processing or distributing wit
+ hout prior authorization by EVRAZ Group entities is strictly forbidden. The
+  recipient shall be liable for any damages\, costs\, losses\, claims or oth
+ er legal actions resulting from violation of the confidentiality requiremen
+ ts stated above. If you received this email by mistake\, please notify the 
+ sender immediately and delete this email and any copy thereof together with
+  the attachments\, if any.\n  This email constitutes a personal opinion of 
+ its author\, is not binding upon EVRAZ Group entities and constitutes no of
+ fer\, invitation to offer or acceptance of an offer\, representation\, warr
+ anty or indemnity\, a preliminary agreement or an agreement on behalf of EV
+ RAZ Group entities under any applicable law. No statement contained in this
+  email may form any grounds for litigation in relation to EVRAZ Group entit
+ ies in any jurisdiction.\n  ________________________________\n
+LAST-MODIFIED:20221124T143824Z
+LOCATION:https://us04web.zoom.us/j/4760218789?pwd=ZllXdVhxSmVFNDRhRXJTd1ZDU
+ VEydz09
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Вводная встреча по стажировке
+TRANSP:OPAQUE
+X-MICROSOFT-CDO-APPT-SEQUENCE:0
+X-MICROSOFT-CDO-IMPORTANCE:1
+X-MICROSOFT-CDO-INSTTYPE:0
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H15M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221125T200000Z
+DTEND:20221125T210000Z
+DTSTAMP:20221208T221506Z
+UID:3nkfivhsjf9a77i662ucoc9q16@google.com
+CREATED:20221125T191357Z
+LAST-MODIFIED:20221125T191357Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:КГ Мерч
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221224T160000Z
+DTSTAMP:20221208T221506Z
+UID:7kfg7d7b6b40d84tk63b9vc97c@google.com
+CREATED:20221125T211904Z
+LAST-MODIFIED:20221125T211904Z
+LOCATION:Ulitsa Pestelya\, 3\, Sankt-Peterburg\, Russia\, 191028
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Теория Воздухоплавания
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221126T120000Z
+DTSTAMP:20221208T221506Z
+UID:cgr3gohochgjib9j6op3gb9k6ss34bb16dgjgb9kc4sm8oj4cgrj0dhh64@google.com
+CREATED:20221125T112329Z
+DESCRIPTION:Debit card Tinkoff Black RUB
+LAST-MODIFIED:20221126T115854Z
+LOCATION:г Санкт-Петербург\, ул Среднерогатская\, д 20
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Tinkoff Delivery
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221223T070000Z
+DTEND:20221223T093000Z
+DTSTAMP:20221208T221506Z
+UID:6c982cgpjmcan8tcrkrtut6iom@google.com
+CREATED:20221201T162132Z
+DESCRIPTION:
+LAST-MODIFIED:20221201T162200Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Мама
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221220T143000Z
+DTEND:20221220T153000Z
+DTSTAMP:20221208T221506Z
+UID:68q32c9n6so6abb36cs62b9k6kr64bb2c9j3ibb168s30eb26gp38db26g@google.com
+CREATED:20221202T141944Z
+LAST-MODIFIED:20221202T141944Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:АйДи новый год
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221202T163000Z
+DTEND:20221202T203000Z
+DTSTAMP:20221208T221506Z
+UID:6cr6ac1k71h3abb3cgpjab9k6grm2bb2c9ij0b9i64om4dr1clh30pj46k@google.com
+CREATED:20221202T065620Z
+DESCRIPTION:
+LAST-MODIFIED:20221202T211413Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Юра
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221204T150000Z
+DTEND:20221204T153000Z
+DTSTAMP:20221208T221506Z
+UID:4m0nrd9gluk3dmd6ltuhnvu2n7@google.com
+CREATED:20221203T162418Z
+LAST-MODIFIED:20221203T162418Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Парикмахерская
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221222T140000Z
+DTEND:20221222T150000Z
+DTSTAMP:20221208T221506Z
+UID:7l2kia2o2j7f3vu74nevb6736e@google.com
+CREATED:20221204T100458Z
+LAST-MODIFIED:20221204T100458Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Прибраться
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221213T160000Z
+DTEND:20221213T180000Z
+DTSTAMP:20221208T221506Z
+UID:19381lu5qfgbfk9s000qmlhhdt@google.com
+CREATED:20221204T120610Z
+LAST-MODIFIED:20221204T120610Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Песенные встречи
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221206T060000Z
+DTEND:20221206T070000Z
+DTSTAMP:20221208T221506Z
+UID:5hr7s5h9kdjongtracn4odhiq5@google.com
+CREATED:20221204T124344Z
+LAST-MODIFIED:20221204T124344Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Отопление
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221206T153000Z
+DTEND:20221206T173000Z
+DTSTAMP:20221208T221506Z
+UID:0qfts4h38vnmh2a6fj3rr061tc@google.com
+CREATED:20221205T194803Z
+LAST-MODIFIED:20221205T194803Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:PolyUnion
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221209T150000Z
+DTEND:20221209T160000Z
+DTSTAMP:20221208T221506Z
+UID:copjacr5c5j3ab9gchijeb9kccojcbb2cgrj4b9o65ij0p1n6com2c3668@google.com
+CREATED:20221206T175931Z
+LAST-MODIFIED:20221206T175931Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Настолки
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230112T160000Z
+DTEND:20230112T170000Z
+DTSTAMP:20221208T221506Z
+UID:ckpmco9mcksm2bb474ojeb9kcorm2b9oc9j38b9p6cqjcdhl6opjccphck@google.com
+CREATED:20221207T154151Z
+LAST-MODIFIED:20221207T154151Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Фото на альбом
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221207T160000Z
+DTEND:20221207T193000Z
+DTSTAMP:20221208T221506Z
+UID:1viafcic7i4l9eo8o0oghq0qfu@google.com
+CREATED:20221125T215509Z
+DESCRIPTION:
+LAST-MODIFIED:20221207T193131Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Фестиваль
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221208T090000Z
+DTEND:20221208T094500Z
+DTSTAMP:20221208T221506Z
+ORGANIZER;CN=pavel.nedviga@gmail.com:mailto:pavel.nedviga@gmail.com
+UID:1a9slv0ue2d24e48mbo4e34o0a@google.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=tachko
+ v.maksim@gmail.com;X-NUM-GUESTS=0:mailto:tachkov.maksim@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=pavel.
+ nedviga@gmail.com;X-NUM-GUESTS=0:mailto:pavel.nedviga@gmail.com
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=999493
+ 1@gmail.com;X-NUM-GUESTS=0:mailto:9994931@gmail.com
+X-GOOGLE-CONFERENCE:https://meet.google.com/pvh-qzci-goz
+CREATED:20221208T060131Z
+DESCRIPTION:<a href="https://www.notion.so/Article-Pile-Optimization-261cb2
+ cfcf0c4d088d87455060a09bee" id="ow772" __is_owner="true">https://www.notion
+ .so/Article-Pile-Optimization-261cb2cfcf0c4d088d87455060a09bee</a>\n\n-::~:
+ ~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ :~:~::-\nJoin with Google Meet: https://meet.google.com/pvh-qzci-goz\n\nLea
+ rn more about Meet at: https://support.google.com/a/users/answer/9282720\n\
+ nPlease do not edit this section.\n-::~:~::~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:
+ ~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~:~::~:~::-
+LAST-MODIFIED:20221208T075931Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Публикация
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221211T150000Z
+DTEND:20221211T160000Z
+DTSTAMP:20221208T221506Z
+UID:0aejv04h5gnqsq5ll63d45luo6@google.com
+CREATED:20221208T094257Z
+LAST-MODIFIED:20221208T094257Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Онлайн тусяо Хохаи
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221222T163000Z
+DTEND:20221222T190000Z
+DTSTAMP:20221208T221506Z
+UID:0i0bm6f0q2f815jc8opjpl1n5j@google.com
+CREATED:20221208T142111Z
+LAST-MODIFIED:20221208T142111Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Hop&Scotch
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221219T163000Z
+DTEND:20221219T190000Z
+DTSTAMP:20221208T221506Z
+UID:2hmh6qs384t84hbvi2b5ngr0vn@google.com
+CREATED:20221125T215555Z
+DESCRIPTION:
+LAST-MODIFIED:20221208T142120Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Hop&Scotch?
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221210T090000Z
+DTEND:20221210T100000Z
+DTSTAMP:20221208T221506Z
+UID:1hgumi0un15qa3ghkpavbc1agq@google.com
+CREATED:20221208T142950Z
+LAST-MODIFIED:20221208T142950Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Лекция по нормконтролю?
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221209T200000Z
+DTEND:20221209T210000Z
+DTSTAMP:20221208T221506Z
+UID:4t71oe7p5fvf71pdrso2mqb48l@google.com
+CREATED:20221208T191211Z
+DESCRIPTION:
+LAST-MODIFIED:20221208T191220Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Evac
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221210T200000Z
+DTEND:20221210T210000Z
+DTSTAMP:20221208T221506Z
+UID:63dr6paomvqga4of0sf1ubn0i4@google.com
+CREATED:20221208T191259Z
+LAST-MODIFIED:20221208T191259Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Evac
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221211T200000Z
+DTEND:20221211T210000Z
+DTSTAMP:20221208T221506Z
+UID:0a94oql3iqoevunjmbljmo86ri@google.com
+CREATED:20221208T191306Z
+LAST-MODIFIED:20221208T191306Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Evac
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
