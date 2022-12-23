@@ -38,6 +38,13 @@ def get_all_calendar_events(calendar_id):
     return events
 
 
+def get_calendar_events(calendar_id, time_min, time_max):
+    events_result = service.events().list(calendarId=calendar_id, singleEvents=True,
+                                          timeMin=time_min, timeMax=time_max).execute()
+    events = events_result.get('items', [])
+    return events
+
+
 def calculate_event_duration(event):
     return get_event_end_time(event) - get_event_start_time(event)
 
@@ -98,71 +105,77 @@ if not creds or not creds.valid:
 #######################################################################################################################
 service = build('calendar', 'v3', credentials=creds)
 
-# print('CALENDAR LIST:')
-calendar_list_result = service.calendarList().list().execute()
-# pprint(calendar_list_result)
-calendar_list = calendar_list_result.get('items', [])
-# pprint(calendar_list)
 
-# pandas table
-table = []
+def get_time_table(time_min, time_max):
 
-for calendar in calendar_list:
+    # Converting time to needed format
+    # Adding time to date from streamlit
+    time_min = datetime.combine(time_min, datetime.min.time())
+    time_max = datetime.combine(time_max, datetime.max.time())
+    # Converting to isoformat (string)
+    time_min = datetime.isoformat(time_min) + 'Z'
+    time_max = datetime.isoformat(time_max) + 'Z'
 
-    calendar_name = calendar.get('summary')
+    # print('CALENDAR LIST:')
+    calendar_list_result = service.calendarList().list().execute()
+    # pprint(calendar_list_result)
+    calendar_list = calendar_list_result.get('items', [])
+    # pprint(calendar_list)
 
-    id = calendar.get('id')
-    print(calendar_name, id)
+    # pandas table
+    table = []
 
-    # print('EVENTS:')
-    _events = get_all_calendar_events(id)
-    for _event in _events:
-        row = dict()
-        row['Calendar'] = calendar_name
-        pprint(_event)
-        # print(_event['summary'])
-        # if _event['summary'] is None:
-        #     event_name = '-'
-        # else:
-        #     event_name = _event['summary']
-        row['Event'] = _event.get('summary')
-        # print(calculate_event_duration(_event))
-        row['Duration'] = calculate_event_duration(_event)
-        # pprint(_event)
-        # print(type(row['Duration']))
-        row['Duration seconds'] = duration_to_seconds(row['Duration'])
+    for calendar in calendar_list:
 
-        table.append(row)
+        calendar_name = calendar.get('summary')
 
-df = pd.DataFrame(table)
-print(df)
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+        id = calendar.get('id')
+        print(calendar_name, id)
+
+        # print('EVENTS:')
+        _events = get_calendar_events(id, time_min, time_max)
+        for _event in _events:
+            row = dict()
+            row['Calendar'] = calendar_name
+            pprint(_event)
+            # print(_event['summary'])
+            # if _event['summary'] is None:
+            #     event_name = '-'
+            # else:
+            #     event_name = _event['summary']
+            row['Event'] = _event.get('summary')
+            # print(calculate_event_duration(_event))
+            row['Duration'] = calculate_event_duration(_event)
+            # pprint(_event)
+            # print(type(row['Duration']))
+            row['Duration seconds'] = duration_to_seconds(row['Duration'])
+
+            table.append(row)
+
+    df = pd.DataFrame(table)
     print(df)
-#
-df_grouped_calendars = df.loc[:, ['Calendar', 'Duration seconds']]
-df_grouped_calendars = df_grouped_calendars.groupby('Calendar').sum()
-df_grouped_calendars = df_grouped_calendars.reset_index()
-with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-    print(df_grouped_calendars)
+    with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+        print(df)
+    #
 
-# print('EVENTS:')
-# _events = get_all_calendar_events('primary')
-# for _event in _events:
-#     print(_event['summary'])
-#     print(calculate_event_duration(_event))
-#     pprint(_event)
+    return df
+
+
+
+
+
+def get_groped_calendars(df):
+    df_grouped_calendars = df.loc[:, ['Calendar', 'Duration seconds']]
+    df_grouped_calendars = df_grouped_calendars.groupby('Calendar').sum()
+    df_grouped_calendars = df_grouped_calendars.reset_index()
+    with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+        print(df_grouped_calendars)
+
+    return df_grouped_calendars
+
+
 
 ######################################
 # WEB
 ######################################
-st.title('MyTime')
 
-names = df_grouped_calendars['Calendar'].tolist()
-durations = df_grouped_calendars['Duration seconds'].tolist()
-
-fig1, ax1 = plt.subplots()
-ax1.pie(durations, labels=names, autopct='%1.1f%%',
-        shadow=False, startangle=90)
-ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-st.pyplot(fig1)
