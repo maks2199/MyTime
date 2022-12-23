@@ -107,11 +107,15 @@ service = build('calendar', 'v3', credentials=creds)
 
 
 def get_time_table(time_min, time_max):
-
     # Converting time to needed format
     # Adding time to date from streamlit
     time_min = datetime.combine(time_min, datetime.min.time())
     time_max = datetime.combine(time_max, datetime.max.time())
+
+    # Calculating total seconds in this range
+    total_delta = time_max - time_min
+    total_date_range_seconds = total_delta.total_seconds()
+
     # Converting to isoformat (string)
     time_min = datetime.isoformat(time_min) + 'Z'
     time_max = datetime.isoformat(time_max) + 'Z'
@@ -153,15 +157,23 @@ def get_time_table(time_min, time_max):
             table.append(row)
 
     df = pd.DataFrame(table)
+
+    total_event_seconds = df['Duration seconds'].sum()
+    unfilled_event_seconds = total_date_range_seconds - total_event_seconds
+
+    row = dict()
+    row['Calendar'] = 'Unfilled'
+    row['Event'] = 'Unfilled event'
+    row['Duration'] = '-'
+    row['Duration seconds'] = unfilled_event_seconds
+
+    df = df.append(row, ignore_index=True)
+
     print(df)
     with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
         print(df)
-    #
 
     return df
-
-
-
 
 
 def get_groped_calendars(df):
@@ -173,9 +185,6 @@ def get_groped_calendars(df):
 
     return df_grouped_calendars
 
-
-
 ######################################
 # WEB
 ######################################
-
