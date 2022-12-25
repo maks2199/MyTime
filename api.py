@@ -180,11 +180,24 @@ def get_groped_calendars(df):
     df_grouped_calendars = df.loc[:, ['Calendar', 'Duration seconds']]
     df_grouped_calendars = df_grouped_calendars.groupby('Calendar').sum()
     df_grouped_calendars = df_grouped_calendars.reset_index()
+
+    print('Calendars')
     with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
         print(df_grouped_calendars)
 
     return df_grouped_calendars
 
+
+def get_groped_events(df):
+    df_grouped_events = df.loc[:, ['Event', 'Duration seconds']]
+    df_grouped_events = df_grouped_events.groupby('Event').sum()
+    df_grouped_events = df_grouped_events.reset_index()
+
+    print('Events')
+    with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+        print(df_grouped_events)
+
+    return df_grouped_events
 ######################################
 # WEB
 ######################################
