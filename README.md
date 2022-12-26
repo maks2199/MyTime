@@ -1,4 +1,4 @@
-# MyTime
+# MyTime ⌚
 App for analyze your time spend from Google Calendar
 
 ## Description of files and directories
