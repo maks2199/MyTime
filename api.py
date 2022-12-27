@@ -39,6 +39,7 @@ def get_all_calendar_events(calendar_id):
 
 
 def get_calendar_events(calendar_id, time_min, time_max):
+    """Returns events from time_min to time_max for calendar by its id"""
     events_result = service.events().list(calendarId=calendar_id, singleEvents=True,
                                           timeMin=time_min, timeMax=time_max).execute()
     events = events_result.get('items', [])
@@ -51,8 +52,6 @@ def calculate_event_duration(event):
 
 def get_event_start_time(event):
     _string = event.get('start', dict()).get('dateTime')
-    # if _string is None:
-    #     _string = event.get('start', dict()).get('date')
     if _string is not None:
         return datetime.fromisoformat(_string)
     else:
@@ -61,8 +60,6 @@ def get_event_start_time(event):
 
 def get_event_end_time(event):
     _string = event.get('end', dict()).get('dateTime')
-    # if _string is None:
-    #     _string = event.get('end', dict()).get('date')
     if _string is not None:
         return datetime.fromisoformat(_string)
     else:
@@ -70,6 +67,7 @@ def get_event_end_time(event):
 
 
 def duration_to_seconds(duration):
+    """Converts duration from dateTime format to seconds"""
     if isinstance(duration, int):
         duration = pd.to_timedelta(duration)
     return duration.total_seconds()
@@ -115,10 +113,12 @@ def get_time_table(time_min, time_max):
     # Calculating total seconds in this range
     total_delta = time_max - time_min
     total_date_range_seconds = total_delta.total_seconds()
+    print('TOTAL total_date_range_seconds')
+    print(total_date_range_seconds)
 
     # Converting to isoformat (string)
-    time_min = datetime.isoformat(time_min) + 'Z'
-    time_max = datetime.isoformat(time_max) + 'Z'
+    time_min = datetime.isoformat(time_min) + '+03:00'
+    time_max = datetime.isoformat(time_max) + '+03:00'
 
     # print('CALENDAR LIST:')
     calendar_list_result = service.calendarList().list().execute()
@@ -133,24 +133,24 @@ def get_time_table(time_min, time_max):
 
         calendar_name = calendar.get('summary')
 
-        id = calendar.get('id')
-        print(calendar_name, id)
+        id_ = calendar.get('id')
+        # print(calendar_name, id_)
 
         # print('EVENTS:')
-        _events = get_calendar_events(id, time_min, time_max)
-        for _event in _events:
+        events_ = get_calendar_events(id_, time_min, time_max)
+        for event_ in events_:
             row = dict()
             row['Calendar'] = calendar_name
-            pprint(_event)
-            # print(_event['summary'])
-            # if _event['summary'] is None:
+            pprint(event_)
+            # print(event_['summary'])
+            # if event_['summary'] is None:
             #     event_name = '-'
             # else:
-            #     event_name = _event['summary']
-            row['Event'] = _event.get('summary')
-            # print(calculate_event_duration(_event))
-            row['Duration'] = calculate_event_duration(_event)
-            # pprint(_event)
+            #     event_name = event_['summary']
+            row['Event'] = event_.get('summary')
+            # print(calculate_event_duration(event_))
+            row['Duration'] = calculate_event_duration(event_)
+            # pprint(event_)
             # print(type(row['Duration']))
             row['Duration seconds'] = duration_to_seconds(row['Duration'])
 
@@ -159,6 +159,8 @@ def get_time_table(time_min, time_max):
     df = pd.DataFrame(table)
 
     total_event_seconds = df['Duration seconds'].sum()
+    print()
+    print('total_event_seconds: ', total_event_seconds)
     unfilled_event_seconds = total_date_range_seconds - total_event_seconds
 
     row = dict()
@@ -198,6 +200,8 @@ def get_groped_events(df):
         print(df_grouped_events)
 
     return df_grouped_events
-######################################
-# WEB
-######################################
+
+
+def get_calendar_events_table(df, calendar_name):
+    return ''
+
