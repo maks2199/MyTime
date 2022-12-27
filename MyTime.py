@@ -13,12 +13,14 @@ time_max = st.date_input("to")
 # Pie chart
 if st.button('Create calendars pie 🥧'):
     df = api.get_time_table(time_min, time_max)
+    st.session_state['df'] = df
     df_grouped_calendars = api.get_groped_calendars(df)
     df_grouped_events = api.get_groped_events(df)
     st.session_state['df_grouped_events'] = df_grouped_events
 
     # Calendars
     calendar_names = df_grouped_calendars['Calendar'].tolist()
+    st.session_state['calendar_names'] = calendar_names
     calendar_durations = df_grouped_calendars['Duration seconds'].tolist()
 
     # Calendars chart
@@ -30,6 +32,11 @@ if st.button('Create calendars pie 🥧'):
     # st.header("from " + str(time_min) + " to " + str(time_max))
     # st.pyplot(fig1)
     st.session_state['fig1'] = fig1
+
+    # Table
+    # df_calendar_events = api.get_calendar_events_table(df, 'Unfilled')
+    # st.dataframe(df_calendar_events)
+    # st.session_state['df_calendar_events'] = df_calendar_events
 
     # Events
     event_names = df_grouped_events['Event'].tolist()
@@ -60,6 +67,14 @@ st.header("from " + str(time_min) + " to " + str(time_max))
 st.pyplot(st.session_state['fig1'])
 
 ###############
+# Event Table
+###############
+selected_calendar_name = st.selectbox('Select calendar', st.session_state['calendar_names'])
+df_calendar_events = api.get_calendar_events_table(st.session_state['df'], selected_calendar_name)
+st.session_state['df_calendar_events'] = df_calendar_events
+st.code(st.session_state['df_calendar_events'])
+
+###############
 # Events chart
 ###############
 if 'selected_event_names' not in st.session_state:
@@ -84,3 +99,4 @@ st.session_state['fig2'] = fig2
 
 
 st.pyplot(st.session_state['fig2'])
+
