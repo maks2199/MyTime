@@ -195,13 +195,15 @@ def get_groped_events(df):
     df_grouped_events = df_grouped_events.groupby('Event').sum()
     df_grouped_events = df_grouped_events.reset_index()
 
-    print('Events')
-    with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-        print(df_grouped_events)
+    # print('Events')
+    # with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+    #     print(df_grouped_events)
 
     return df_grouped_events
 
 
 def get_calendar_events_table(df, calendar_name):
-    return ''
+    df_calendar_events = df.loc[df['Calendar'] == calendar_name]
+    df_calendar_events = df_calendar_events.loc[:, ['Event', 'Duration']]
+    return df_calendar_events
 
