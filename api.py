@@ -61,7 +61,8 @@ def get_event_start_time(event):
 def get_event_end_time(event):
     _string = event.get('end', dict()).get('dateTime')
     if _string is not None:
-        return datetime.fromisoformat(_string)
+        #return datetime.fromisoformat(_string)
+        return datetime.strptime(_string, "%Y-%m-%dT%H:%M:%S%z")
     else:
         return 0
 
