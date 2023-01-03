@@ -14,7 +14,7 @@ from googleapiclient.errors import HttpError
 import pandas as pd
 
 import streamlit as st
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 
 #######################################################################################################################
@@ -162,6 +162,7 @@ def get_time_table(time_min, time_max):
     print()
     print('total_event_seconds: ', total_event_seconds)
     unfilled_event_seconds = total_date_range_seconds - total_event_seconds
+    # TOD correct unfilled_event_seconds, events can intersect!
 
     row = dict()
     row['Calendar'] = 'Unfilled'
