@@ -1,0 +1,3472 @@
+BEGIN:VCALENDAR
+PRODID:-//Google Inc//Google Calendar 70.9054//EN
+VERSION:2.0
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:ae.eau.e@gmail.com
+X-WR-TIMEZONE:Europe/Moscow
+BEGIN:VTIMEZONE
+TZID:Europe/Moscow
+X-LIC-LOCATION:Europe/Moscow
+BEGIN:STANDARD
+TZOFFSETFROM:+0300
+TZOFFSETTO:+0300
+TZNAME:MSK
+DTSTART:19700101T000000
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20190802
+DTEND;VALUE=DATE:20190803
+DTSTAMP:20230105T143622Z
+UID:68rmcohhc9i3cb9o6ss3ab9kckr30b9o6gomcb9jcosjip1ncgq66cr3cc@google.com
+CREATED:20190830T185225Z
+DESCRIPTION:
+LAST-MODIFIED:20190830T185225Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:артем ухов
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200319T155000Z
+DTEND:20200319T205000Z
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9tqm1pocpltp8qaqs16i6f7op1ta58cngtoki26jnv71rhris8l0ag
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20200317T150240Z
+DESCRIPTION:S7\, рейс 5237\nНовосибирск (OVB)\, 10:50PM (по местному времен
+ и) – Хабаровск (KHV)\, 6:50AM (по местному времени)\n\nКод бронирования: MZ
+ HHWSY
+LAST-MODIFIED:20200318T095256Z
+LOCATION:Новосибирск OVB
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Авиаперелет в г. Хабаровск (S7 5237)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200319T102500Z
+DTEND:20200319T145000Z
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9trhrjcukgr30bvrulj9f832n1unua6nscek89e3qv9prba2rhcp10
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20200317T150240Z
+DESCRIPTION:S7 Airlines\, рейс 5004\nСанкт-Петербург (LED)\, 1:25PM (по мес
+ тному времени) – Новосибирск (OVB)\, 9:50PM (по местному времени)\n\nКод бр
+ онирования: MZHHWSY
+LAST-MODIFIED:20200319T044334Z
+LOCATION:Санкт-Петербург LED
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Авиаперелет в г. Новосибирск (S7 5004)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200618T043000Z
+DTEND:20200618T091500Z
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9tmklcorksgio6uri1kir5llulttmg4f1701ms4aqp2prgv9hatbhg
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20200617T124807Z
+DESCRIPTION:S7 Airlines\, рейс 5003\nНовосибирск (OVB)\, 11:30AM (по местно
+ му времени) – Санкт-Петербург (LED)\, 12:15PM (по местному времени)\n\nКод 
+ бронирования: MR4532Y
+LAST-MODIFIED:20200617T125103Z
+LOCATION:Новосибирск OVB
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Авиаперелет в г. Санкт-Петербург (S7 5003)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20200617T220500Z
+DTEND:20200618T032000Z
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9tu0ofsaoaq8r7rv564eu99f4hdtj6b9q3hhsvr61l4ku3ms1g8ss0
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20200617T124807Z
+DESCRIPTION:S7 Airlines\, рейс 5238\nХабаровск (KHV)\, 8:05AM (по местному 
+ времени) – Новосибирск (OVB)\, 10:20AM (по местному времени)\n\nКод брониро
+ вания: MR4532Y
+LAST-MODIFIED:20200620T024134Z
+LOCATION:Хабаровск KHV
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Авиаперелет в г. Новосибирск (S7 5238)
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20201231
+DTEND;VALUE=DATE:20210102
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9t2b35au3pa732ncp128ral53k0hqam30g37v1q2m2p9ltlm0u7jt0
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20201230T012310Z
+DESCRIPTION:Отель Полюстрово\nСанкт-Петербург\n+7 812 303-81-50\n\nДата и в
+ ремя заезда: 31 дек 2020 12:00AM\nДата и время выезда: 1 янв 2021 12:00AM\n
+LAST-MODIFIED:20201230T012533Z
+LOCATION:Отель Полюстрово\, Санкт-Петербург
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Гостиница "Отель Полюстрово"
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210213T084900Z
+DTEND:20210213T091700Z
+DTSTAMP:20230105T143622Z
+UID:ckqjgc9j6ks3ibb36dh3ib9kchi6ab9p6oo3ebb464q3gdj4c5ij6cr66s@google.com
+CREATED:20210212T200026Z
+DESCRIPTION:Поездка Финляндский вокзал - Песочная\nПригородный поезд\nДата 
+ отправления: 13.02.2021\nБилеты:\nНомер билета: 4960361\n\nМесто не указано
+ \n\n
+LAST-MODIFIED:20210212T200026Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка Финляндский вокзал - Песочная
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210213T144200Z
+DTEND:20210213T151200Z
+DTSTAMP:20230105T143622Z
+UID:ckr68d356ph34bb2cph3ib9k71j3cb9p6lh3ebb674q30c9gcphjap9p6c@google.com
+CREATED:20210212T203802Z
+DESCRIPTION:Поездка Песочная - Финляндский вокзал\nПригородный поезд\nДата 
+ отправления: 13.02.2021\nБилеты:\nНомер билета: 4960531\n\nМесто не указано
+ \n\n
+LAST-MODIFIED:20210212T203803Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка Песочная - Финляндский вокзал
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20210313
+DTEND;VALUE=DATE:20210315
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9tolk00er7ks9u10rrqa2nr57oo42ls0aifcj8jv2q3e3l3cm09gjg
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20210312T003243Z
+DESCRIPTION:Охтинская гостиница\nСанкт-Петербург\n+7 812 318-00-40\n\nCheck
+ -in: 13 мар 2021 12:00AM\nCheck-out: 14 мар 2021 12:00AM\n
+LAST-MODIFIED:20210312T003243Z
+LOCATION:Охтинская гостиница\, Санкт-Петербург
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Охтинская гостиница
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20210416
+DTEND;VALUE=DATE:20210418
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9tfmhgkoqg9im3fk958tati9h9rc4tur7dobo2m2d7g5ggg8ltt27g
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20210412T022514Z
+DESCRIPTION:Station Hotel M19\nSaint Petersburg\n+7 800 500-78-20\n\nCheck-
+ in: 16 апр 2021 12:00AM\nCheck-out: 17 апр 2021 12:00AM\n
+LAST-MODIFIED:20210418T061820Z
+LOCATION:Station Hotel M19\, Saint Petersburg
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Station Hotel M19
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210625T163000Z
+DTEND:20210625T175400Z
+DTSTAMP:20230105T143622Z
+UID:70r32ohk6lgm4b9o6pimab9kc8ojebb168p64b9o64p30phncdgm8p9mcc@google.com
+CREATED:20210625T161223Z
+DESCRIPTION:Поездка Финляндский вокзал - Каннельярви\nПригородный поезд\nДа
+ та отправления: 25.06.2021\nБилеты:\nНомер билета: 7681638\n\nМесто не указ
+ ано\n\n
+LAST-MODIFIED:20210625T161223Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка Финляндский вокзал - Каннельярви
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T074500Z
+DTEND:20210801T090000Z
+DTSTAMP:20230105T143622Z
+UID:60q36ob4cgrjgb9jclgjcb9k6pgj6b9ocoojgbb569im2dpm6ti3go9o6k@google.com
+CREATED:20210723T162859Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА\nПоезд №921ЧА\nВ
+ агон 05\nДата отправления: 01.08.2021\nВремя отправления: 10:45 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 12:00 (МСК)\nБилеты:\nНомер билета: 
+ 75314402669272\nМесто: 001\nНомер билета: 75314402669283\nМесто: 002\nНомер
+  билета: 75314402669294\nМесто: 004\n\n
+LAST-MODIFIED:20210723T162859Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T155000Z
+DTEND:20210801T164700Z
+DTSTAMP:20230105T143622Z
+UID:65h6ad1l64q6ab9m60rjeb9k6hgm6bb2c9h3cb9k6th62pj375h3ac1pco@google.com
+CREATED:20210723T162859Z
+DESCRIPTION:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД\nПоезд №926ЫА\nВ
+ агон 02\nДата отправления: 01.08.2021\nВремя отправления: 18:50 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 19:47 (МСК)\nБилеты:\nНомер билета: 
+ 75314402669235\nМесто: 017\nНомер билета: 75314402669246\nМесто: 018\nНомер
+  билета: 75314402669250\nМесто: 020\n\n
+LAST-MODIFIED:20210723T162900Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T074500Z
+DTEND:20210801T090000Z
+DTSTAMP:20230105T143622Z
+UID:6kqj4opk6tij8bb4c9gmab9k71gjgb9o60p3abb374q3ap9n6th3gdj668@google.com
+CREATED:20210723T164642Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА\nПоезд №921ЧА\nВ
+ агон 05\nДата отправления: 01.08.2021\nВремя отправления: 10:45 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 12:00 (МСК)\nБилеты:\nНомер билета: 
+ 75314402719366\nМесто: 010\nНомер билета: 75314402719370\nМесто: 012\nНомер
+  билета: 75314402719381\nМесто: 044\n\n
+LAST-MODIFIED:20210723T164643Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T155000Z
+DTEND:20210801T164700Z
+DTSTAMP:20230105T143622Z
+UID:ccomco9gchhm6bb4cks32b9k6os3ebb264qjgb9hc8q6cor465gm6chicc@google.com
+CREATED:20210723T164643Z
+DESCRIPTION:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД\nПоезд №926ЫА\nВ
+ агон 02\nДата отправления: 01.08.2021\nВремя отправления: 18:50 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 19:47 (МСК)\nБилеты:\nНомер билета: 
+ 75314402719322\nМесто: 049\nНомер билета: 75314402719333\nМесто: 050\nНомер
+  билета: 75314402719344\nМесто: 052\n\n
+LAST-MODIFIED:20210723T164643Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T074500Z
+DTEND:20210801T090000Z
+DTSTAMP:20230105T143622Z
+UID:c8r3ad1jcop68b9ochgj6b9k71i68b9o6oo6cb9hclhjgpb6c8p32c32cc@google.com
+CREATED:20210723T165357Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА\nПоезд №921ЧА\nВ
+ агон 05\nДата отправления: 01.08.2021\nВремя отправления: 10:45 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 12:00 (МСК)\nБилеты:\nНомер билета: 
+ 75314402743376\nМесто: 046\nНомер билета: 75314402743380\nМесто: 048\nНомер
+  билета: 75314402743391\nМесто: 050\n\n
+LAST-MODIFIED:20210723T165358Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T155000Z
+DTEND:20210801T164700Z
+DTSTAMP:20230105T143622Z
+UID:70qjiob5ccpmcbb3chh64b9kcpijib9o69h3cbb26gq68p1k6osjgohk68@google.com
+CREATED:20210723T165358Z
+DESCRIPTION:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД\nПоезд №926ЫА\nВ
+ агон 02\nДата отправления: 01.08.2021\nВремя отправления: 18:50 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 19:47 (МСК)\nБилеты:\nНомер билета: 
+ 75314402743310\nМесто: 006\nНомер билета: 75314402743321\nМесто: 008\nНомер
+  билета: 75314402743332\nМесто: 010\n\n
+LAST-MODIFIED:20210723T165358Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T074500Z
+DTEND:20210801T090000Z
+DTSTAMP:20230105T143622Z
+UID:6phjgcph68p30b9l6pijgb9kc8s6cbb261im6bb46op3ac9j6gq30db6c4@google.com
+CREATED:20210723T170527Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА\nПоезд №921ЧА\nВ
+ агон 04\nДата отправления: 01.08.2021\nВремя отправления: 10:45 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 12:00 (МСК)\nБилеты:\nНомер билета: 
+ 75314402770993\nМесто: 004\nНомер билета: 75314402771004\nМесто: 006\nНомер
+  билета: 75314402771015\nМесто: 008\n\n
+LAST-MODIFIED:20210723T170527Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T155000Z
+DTEND:20210801T164700Z
+DTSTAMP:20230105T143622Z
+UID:6di68chp68sm2b9h64q3eb9k68q6abb26pj3eb9lclh32chh6di3eor3c4@google.com
+CREATED:20210723T170528Z
+DESCRIPTION:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД\nПоезд №926ЫА\nВ
+ агон 02\nДата отправления: 01.08.2021\nВремя отправления: 18:50 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 19:47 (МСК)\nБилеты:\nНомер билета: 
+ 75314402770956\nМесто: 012\nНомер билета: 75314402770960\nМесто: 025\nНомер
+  билета: 75314402770971\nМесто: 026\n\n
+LAST-MODIFIED:20210723T170528Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T074500Z
+DTEND:20210801T090000Z
+DTSTAMP:20230105T143622Z
+UID:cgrm2cj4ccs3cb9kcgpjcb9k6sr64b9p70r66b9i64rmco9jclj38cpk74@google.com
+CREATED:20210723T171055Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА\nПоезд №921ЧА\nВ
+ агон 04\nДата отправления: 01.08.2021\nВремя отправления: 10:45 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 12:00 (МСК)\nБилеты:\nНомер билета: 
+ 75314402790276\nМесто: 010\nНомер билета: 75314402790280\nМесто: 012\nНомер
+  билета: 75314402790291\nМесто: 013\n\n
+LAST-MODIFIED:20210723T171055Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T155000Z
+DTEND:20210801T164700Z
+DTSTAMP:20230105T143622Z
+UID:64r3id9n69ij6b9i6li34b9k68q3eb9p6csjeb9m6spjge9j6gr3cp9gc4@google.com
+CREATED:20210723T171055Z
+DESCRIPTION:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД\nПоезд №926ЫА\nВ
+ агон 02\nДата отправления: 01.08.2021\nВремя отправления: 18:50 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 19:47 (МСК)\nБилеты:\nНомер билета: 
+ 75314402790210\nМесто: 028\nНомер билета: 75314402790221\nМесто: 033\nНомер
+  билета: 75314402790232\nМесто: 034\n\n
+LAST-MODIFIED:20210723T171055Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T074500Z
+DTEND:20210801T090000Z
+DTSTAMP:20230105T143622Z
+UID:69hjgd9j60sj2b9o64omcb9kcpj3gbb2cpgj8b9oc9h34pj6cco6aor3c8@google.com
+CREATED:20210723T171752Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА\nПоезд №921ЧА\nВ
+ агон 04\nДата отправления: 01.08.2021\nВремя отправления: 10:45 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 12:00 (МСК)\nБилеты:\nНомер билета: 
+ 75314402811792\nМесто: 014\nНомер билета: 75314402811803\nМесто: 016\nНомер
+  билета: 75314402811814\nМесто: 020\n\n
+LAST-MODIFIED:20210723T171752Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T155000Z
+DTEND:20210801T164700Z
+DTSTAMP:20230105T143622Z
+UID:70pmcd1m6tijab9m6go64b9k6gp3ab9o64s36bb571i6ap1h74rj4dj26c@google.com
+CREATED:20210723T171753Z
+DESCRIPTION:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД\nПоезд №926ЫА\nВ
+ агон 02\nДата отправления: 01.08.2021\nВремя отправления: 18:50 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 19:47 (МСК)\nБилеты:\nНомер билета: 
+ 75314402811744\nМесто: 036\nНомер билета: 75314402811755\nМесто: 038\nНомер
+  билета: 75314402811766\nМесто: 040\n\n
+LAST-MODIFIED:20210723T171753Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T074500Z
+DTEND:20210801T090000Z
+DTSTAMP:20230105T143622Z
+UID:c4s6ac1hc4pm8bb6c8pjgb9k60r3ib9o68r34b9ncpj68pb3c4q3ad9g74@google.com
+CREATED:20210723T181126Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА\nПоезд №921ЧА\nВ
+ агон 02\nДата отправления: 01.08.2021\nВремя отправления: 10:45 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 12:00 (МСК)\nБилеты:\nНомер билета: 
+ 75314402962012\nМесто: 021\nНомер билета: 75314402962023\nМесто: 022\nНомер
+  билета: 75314402962034\nМесто: 028\n\n
+LAST-MODIFIED:20210723T181126Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - ГОРНЫЙ ПАРК РУСКЕАЛА
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210801T155000Z
+DTEND:20210801T164700Z
+DTSTAMP:20230105T143622Z
+UID:ckrjip9j68pm4b9p6koj6b9k6di62b9oc5j34b9ocor32ob6c9j3eoppc4@google.com
+CREATED:20210723T181127Z
+DESCRIPTION:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД\nПоезд №926ЫА\nВ
+ агон 02\nДата отправления: 01.08.2021\nВремя отправления: 18:50 (МСК)\nДата
+  прибытия: 01.08.2021\nВремя прибытия: 19:47 (МСК)\nБилеты:\nНомер билета: 
+ 75314402961986\nМесто: 042\nНомер билета: 75314402961990\nМесто: 044\nНомер
+  билета: 75314402962001\nМесто: 048\n\n
+LAST-MODIFIED:20210723T181127Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка ГОРНЫЙ ПАРК РУСКЕАЛА - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210806T183400Z
+DTEND:20210807T060000Z
+DTSTAMP:20230105T143622Z
+UID:c8rm6d9occp62b9gcdi6cb9kc5hm6bb26sr66b9kckp36e1k6soj8d1j74@google.com
+CREATED:20210804T212911Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС\nПоезд №349*АА\nВагон
+  04\nДата отправления: 06.08.2021\nВремя отправления: 21:34 (МСК)\nДата при
+ бытия: 07.08.2021\nВремя прибытия: 09:00 (МСК)\nБилеты:\nНомер билета: 7546
+ 4438234124\nМесто: 013\nНомер билета: 75464438234135\nМесто: 017\nНомер бил
+ ета: 75464438234146\nМесто: 018\n\n
+LAST-MODIFIED:20210804T212912Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210808T171600Z
+DTEND:20210809T043800Z
+DTSTAMP:20230105T143622Z
+UID:6gsm8d9mcoq6cb9pc4p38b9kclhj2b9p74sjeb9hc4o36eb4chgj4cj6c4@google.com
+CREATED:20210804T212913Z
+DESCRIPTION:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД\nПоезд №350ВА\nВагон 
+ 08\nДата отправления: 08.08.2021\nВремя отправления: 20:16 (МСК)\nДата приб
+ ытия: 09.08.2021\nВремя прибытия: 07:38 (МСК)\nБилеты:\nНомер билета: 75514
+ 438234091\nМесто: 004\nНомер билета: 75514438234102\nМесто: 018\nНомер биле
+ та: 75514438234113\nМесто: 020\n\n
+LAST-MODIFIED:20210804T212913Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210806T183400Z
+DTEND:20210807T060000Z
+DTSTAMP:20230105T143622Z
+UID:71h32o9o70sm4b9jccs30b9k6go64bb2cli34bb364r66cj1cdi3ec9mco@google.com
+CREATED:20210804T213819Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС\nПоезд №349*АА\nВагон
+  04\nДата отправления: 06.08.2021\nВремя отправления: 21:34 (МСК)\nДата при
+ бытия: 07.08.2021\nВремя прибытия: 09:00 (МСК)\nБилеты:\nНомер билета: 7546
+ 4438244764\nМесто: 020\nНомер билета: 75464438244775\nМесто: 021\nНомер бил
+ ета: 75464438244786\nМесто: 022\n\n
+LAST-MODIFIED:20210804T213819Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210808T171600Z
+DTEND:20210809T043800Z
+DTSTAMP:20230105T143622Z
+UID:c5hjap9nckqm6b9g6lh36b9k65ijebb2c8qm8bb560r32dhm6srj6dpm6c@google.com
+CREATED:20210804T213820Z
+DESCRIPTION:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД\nПоезд №350ВА\nВагон 
+ 08\nДата отправления: 08.08.2021\nВремя отправления: 20:16 (МСК)\nДата приб
+ ытия: 09.08.2021\nВремя прибытия: 07:38 (МСК)\nБилеты:\nНомер билета: 75514
+ 438244790\nМесто: 048\nНомер билета: 75514438244801\nМесто: 052\nНомер биле
+ та: 75514438244812\nМесто: 054\n\n
+LAST-MODIFIED:20210804T213820Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210806T183400Z
+DTEND:20210807T060000Z
+DTSTAMP:20230105T143622Z
+UID:c8q3iphn74pj2bb26tijib9kc5imab9p6srjcbb469j3idhk64sjcpho6g@google.com
+CREATED:20210804T214239Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС\nПоезд №349*АА\nВагон
+  04\nДата отправления: 06.08.2021\nВремя отправления: 21:34 (МСК)\nДата при
+ бытия: 07.08.2021\nВремя прибытия: 09:00 (МСК)\nБилеты:\nНомер билета: 7546
+ 4438248791\nМесто: 019\nНомер билета: 75464438248802\nМесто: 023\nНомер бил
+ ета: 75464438248813\nМесто: 024\n\n
+LAST-MODIFIED:20210804T214239Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210808T171600Z
+DTEND:20210809T043800Z
+DTSTAMP:20230105T143622Z
+UID:69ijcp1p6pijgb9gckpjab9k64pj8bb16ti68b9i60pm2cj469ijaphpcc@google.com
+CREATED:20210804T214240Z
+DESCRIPTION:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД\nПоезд №350ВА\nВагон 
+ 08\nДата отправления: 08.08.2021\nВремя отправления: 20:16 (МСК)\nДата приб
+ ытия: 09.08.2021\nВремя прибытия: 07:38 (МСК)\nБилеты:\nНомер билета: 75514
+ 438248861\nМесто: 026\nНомер билета: 75514438248872\nМесто: 028\nНомер биле
+ та: 75514438248883\nМесто: 030\n\n
+LAST-MODIFIED:20210804T214241Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210806T183400Z
+DTEND:20210807T060000Z
+DTSTAMP:20230105T143622Z
+UID:6hh68d1m60q3abb670r6cb9kckoj0b9p61j36b9p6spj2dj1clim2cpi6o@google.com
+CREATED:20210804T214914Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС\nПоезд №349*АА\nВагон
+  04\nДата отправления: 06.08.2021\nВремя отправления: 21:34 (МСК)\nДата при
+ бытия: 07.08.2021\nВремя прибытия: 09:00 (МСК)\nБилеты:\nНомер билета: 7546
+ 4438255290\nМесто: 028\nНомер билета: 75464438255301\nМесто: 029\nНомер бил
+ ета: 75464438255312\nМесто: 030\n\n
+LAST-MODIFIED:20210804T214915Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210808T171600Z
+DTEND:20210809T043800Z
+DTSTAMP:20230105T143622Z
+UID:6kpj4opi6hj66b9ncopmcb9k64q6cb9o65hjibb568r30phg6lh30opm6k@google.com
+CREATED:20210804T214919Z
+DESCRIPTION:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД\nПоезд №350ВА\nВагон 
+ 08\nДата отправления: 08.08.2021\nВремя отправления: 20:16 (МСК)\nДата приб
+ ытия: 09.08.2021\nВремя прибытия: 07:38 (МСК)\nБилеты:\nНомер билета: 75514
+ 438255323\nМесто: 032\nНомер билета: 75514438255334\nМесто: 034\nНомер биле
+ та: 75514438255345\nМесто: 038\n\n
+LAST-MODIFIED:20210804T214919Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210806T183400Z
+DTEND:20210807T060000Z
+DTSTAMP:20230105T143622Z
+UID:6so62d9l64s38b9pchij4b9k6cpm4bb1cop66b9k71hm2p1n6ti36p1hcg@google.com
+CREATED:20210804T215359Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС\nПоезд №349*АА\nВагон
+  04\nДата отправления: 06.08.2021\nВремя отправления: 21:34 (МСК)\nДата при
+ бытия: 07.08.2021\nВремя прибытия: 09:00 (МСК)\nБилеты:\nНомер билета: 7546
+ 4438258016\nМесто: 027\nНомер билета: 75464438258020\nМесто: 031\nНомер бил
+ ета: 75464438258031\nМесто: 032\nНомер билета: 75464438258042\nМесто: 033\n
+ \n
+LAST-MODIFIED:20210804T215359Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210808T171600Z
+DTEND:20210809T043800Z
+DTSTAMP:20230105T143622Z
+UID:c8s68d3568om8bb16os66b9k6kp6abb16ksjgbb165hjie31clijcp1lcg@google.com
+CREATED:20210804T215400Z
+DESCRIPTION:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД\nПоезд №350ВА\nВагон 
+ 07\nДата отправления: 08.08.2021\nВремя отправления: 20:16 (МСК)\nДата приб
+ ытия: 09.08.2021\nВремя прибытия: 07:38 (МСК)\nБилеты:\nНомер билета: 75514
+ 438258053\nМесто: 022\nНомер билета: 75514438258064\nМесто: 026\nНомер биле
+ та: 75514438258075\nМесто: 034\nНомер билета: 75514438258086\nМесто: 038\n\
+ n
+LAST-MODIFIED:20210804T215400Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210806T183400Z
+DTEND:20210807T060000Z
+DTSTAMP:20230105T143622Z
+UID:cgrj6p1h74oj8bb2c9gj0b9k60o62b9p6ph66b9o6sp68dr274pj6c9j6k@google.com
+CREATED:20210804T215752Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС\nПоезд №349*АА\nВагон
+  04\nДата отправления: 06.08.2021\nВремя отправления: 21:34 (МСК)\nДата при
+ бытия: 07.08.2021\nВремя прибытия: 09:00 (МСК)\nБилеты:\nНомер билета: 7546
+ 4438261730\nМесто: 037\nНомер билета: 75464438261741\nМесто: 038\nНомер бил
+ ета: 75464438261752\nМесто: 039\nНомер билета: 75464438261763\nМесто: 040\n
+ \n
+LAST-MODIFIED:20210804T215752Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210808T171600Z
+DTEND:20210809T043800Z
+DTSTAMP:20230105T143622Z
+UID:6lh3idr3cgoj6b9o6th36b9k75i66bb2clh62b9j6ksj0cr5c8s30d1l70@google.com
+CREATED:20210804T215753Z
+DESCRIPTION:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД\nПоезд №350ВА\nВагон 
+ 06\nДата отправления: 08.08.2021\nВремя отправления: 20:16 (МСК)\nДата приб
+ ытия: 09.08.2021\nВремя прибытия: 07:38 (МСК)\nБилеты:\nНомер билета: 75514
+ 438261774\nМесто: 002\nНомер билета: 75514438261785\nМесто: 008\nНомер биле
+ та: 75514438261796\nМесто: 034\nНомер билета: 75514438261800\nМесто: 036\n\
+ n
+LAST-MODIFIED:20210804T215753Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210806T183400Z
+DTEND:20210807T060000Z
+DTSTAMP:20230105T143622Z
+UID:6opmcc9l65ij2b9l6krmab9k65j36bb26dh6ab9j65hjec9n68rj8chocg@google.com
+CREATED:20210804T220850Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС\nПоезд №349*АА\nВагон
+  04\nДата отправления: 06.08.2021\nВремя отправления: 21:34 (МСК)\nДата при
+ бытия: 07.08.2021\nВремя прибытия: 09:00 (МСК)\nБилеты:\nНомер билета: 7546
+ 4438269695\nМесто: 041\nНомер билета: 75464438269706\nМесто: 042\nНомер бил
+ ета: 75464438269710\nМесто: 043\n\n
+LAST-MODIFIED:20210804T220850Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210808T171600Z
+DTEND:20210809T043800Z
+DTSTAMP:20230105T143622Z
+UID:69h66dj66ti3ibb5chij8b9k6ks3ib9p6gqm8b9j74ojae1h6lj6acj66o@google.com
+CREATED:20210804T220850Z
+DESCRIPTION:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД\nПоезд №350ВА\nВагон 
+ 07\nДата отправления: 08.08.2021\nВремя отправления: 20:16 (МСК)\nДата приб
+ ытия: 09.08.2021\nВремя прибытия: 07:38 (МСК)\nБилеты:\nНомер билета: 75514
+ 438269721\nМесто: 040\nНомер билета: 75514438269732\nМесто: 044\nНомер биле
+ та: 75514438269743\nМесто: 046\n\n
+LAST-MODIFIED:20210804T220851Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210806T183400Z
+DTEND:20210807T060000Z
+DTSTAMP:20230105T143622Z
+UID:6ormap316sp30b9o71ijeb9k69hj0b9pcgs36b9k64q3adj56so32d326o@google.com
+CREATED:20210806T064019Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС\nПоезд №349*АА\nВагон
+  04\nДата отправления: 06.08.2021\nВремя отправления: 21:34 (МСК)\nДата при
+ бытия: 07.08.2021\nВремя прибытия: 09:00 (МСК)\nБилеты:\nНомер билета: 7546
+ 4441903664\nМесто: 052\n\n
+LAST-MODIFIED:20210806T064019Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - КОСТОМУКША ПАСС
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210808T171600Z
+DTEND:20210809T043800Z
+DTSTAMP:20230105T143622Z
+UID:6cpm2dhicgqmab9o74smab9k6ksj0bb161ij6b9k6sp32cr260o30opo74@google.com
+CREATED:20210806T064019Z
+DESCRIPTION:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД\nПоезд №350ВА\nВагон 
+ 08\nДата отправления: 08.08.2021\nВремя отправления: 20:16 (МСК)\nДата приб
+ ытия: 09.08.2021\nВремя прибытия: 07:38 (МСК)\nБилеты:\nНомер билета: 75514
+ 441903675\nМесто: 046\n\n
+LAST-MODIFIED:20210806T064020Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка КОСТОМУКША ПАСС - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210814T171300Z
+DTEND:20210814T210500Z
+DTSTAMP:20230105T143622Z
+UID:6lh3ie1pc8smcb9kclj6cb9k74r32bb275i3eb9p61h66e1jcgsjco9kck@google.com
+CREATED:20210813T202135Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №828ВА\nВагон 
+ 04\nДата отправления: 14.08.2021\nВремя отправления: 20:13 (МСК)\nДата приб
+ ытия: 15.08.2021\nВремя прибытия: 00:05 (МСК)\nБилеты:\nНомер билета: 75664
+ 465473600\nМесто: 061\n\n
+LAST-MODIFIED:20210813T202135Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210825T154500Z
+DTEND:20210825T194300Z
+DTSTAMP:20230105T143622Z
+UID:71j38o9p6komab9oc5hj2b9k61h32b9ocksjabb36csm2cr2c9h30or3cc@google.com
+CREATED:20210825T063323Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 05\nДата отправления: 25.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 25.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 75914
+ 495347986\nМесто: 022\n\n
+LAST-MODIFIED:20210825T063323Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210826T162500Z
+DTEND:20210826T203000Z
+DTSTAMP:20230105T143622Z
+UID:68o66db274qj8b9gccqm6b9kcgrmcb9p64r32b9g74s34dpmchhj8cb3co@google.com
+CREATED:20210825T063324Z
+DESCRIPTION:Поездка САНКТ-ПЕТЕРБУРГ - СОРТАВАЛА ГОРОД\nПоезд №823ВА\nВагон 
+ 01\nДата отправления: 26.08.2021\nВремя отправления: 19:25 (МСК)\nДата приб
+ ытия: 26.08.2021\nВремя прибытия: 23:30 (МСК)\nБилеты:\nНомер билета: 75964
+ 495347916\nМесто: 026\n\n
+LAST-MODIFIED:20210825T063324Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка САНКТ-ПЕТЕРБУРГ - СОРТАВАЛА ГОРОД
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210831T154500Z
+DTEND:20210831T194300Z
+DTSTAMP:20230105T143622Z
+UID:6lij6oph75i36b9p68rjib9k6srj6b9p74p3ab9o6csjgdpl6ko34e336c@google.com
+CREATED:20210830T091119Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 04\nДата отправления: 31.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 31.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 76064
+ 506841172\nМесто: 033\nНомер билета: 76064506841183\nМесто: 034\nНомер биле
+ та: 76064506841194\nМесто: 036\n\n
+LAST-MODIFIED:20210830T091119Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210831T154500Z
+DTEND:20210831T194300Z
+DTSTAMP:20230105T143622Z
+UID:6pj3eoph6dgm4b9pc5ij6b9k6gp3gb9o74pj0b9p71i64or5c4p38d36c8@google.com
+CREATED:20210830T093048Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 04\nДата отправления: 31.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 31.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 76064
+ 506897802\nМесто: 045\nНомер билета: 76064506897813\nМесто: 046\nНомер биле
+ та: 76064506897824\nМесто: 048\n\n
+LAST-MODIFIED:20210830T093048Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210831T154500Z
+DTEND:20210831T194300Z
+DTSTAMP:20230105T143622Z
+UID:cop32cb170r30bb26ssj6b9k60smab9pc4pj6bb26sqjaphl70s6aohp68@google.com
+CREATED:20210830T100240Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 04\nДата отправления: 31.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 31.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 76064
+ 506981964\nМесто: 057\nНомер билета: 76064506981975\nМесто: 058\nНомер биле
+ та: 76064506981986\nМесто: 060\n\n
+LAST-MODIFIED:20210830T100240Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210831T154500Z
+DTEND:20210831T194300Z
+DTSTAMP:20230105T143622Z
+UID:6oq3cd1h6tj3ibb56gq6ab9k74rm6b9o6di3eb9h6kp34c1o6orjap9ick@google.com
+CREATED:20210830T100620Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 04\nДата отправления: 31.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 31.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 76064
+ 506994553\nМесто: 063\nНомер билета: 76064506994564\nМесто: 064\nНомер биле
+ та: 76064506994575\nМесто: 066\n\n
+LAST-MODIFIED:20210830T100620Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210831T154500Z
+DTEND:20210831T194300Z
+DTSTAMP:20230105T143622Z
+UID:6com8d1j61h3abb4copjeb9kcks68bb1cgpmcb9l65h3gd9h75j32pb26k@google.com
+CREATED:20210830T101346Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 04\nДата отправления: 31.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 31.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 76064
+ 507013486\nМесто: 069\nНомер билета: 76064507013490\nМесто: 070\nНомер биле
+ та: 76064507013501\nМесто: 072\n\n
+LAST-MODIFIED:20210830T101346Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210831T154500Z
+DTEND:20210831T194300Z
+DTSTAMP:20230105T143622Z
+UID:chi6aob375i3cb9g74qjgb9kchi3ab9o70o3eb9m6ph36p35c8p3idr66k@google.com
+CREATED:20210830T101856Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 04\nДата отправления: 31.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 31.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 76064
+ 507023824\nМесто: 039\nНомер билета: 76064507023835\nМесто: 040\nНомер биле
+ та: 76064507023846\nМесто: 042\n\n
+LAST-MODIFIED:20210830T101856Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210831T154500Z
+DTEND:20210831T194300Z
+DTSTAMP:20230105T143622Z
+UID:clhmapb3c4r68b9l60o32b9kc8qj2bb165hj8b9l6krj8cpo70qmcp1h64@google.com
+CREATED:20210830T103202Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 04\nДата отправления: 31.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 31.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 76064
+ 507062276\nМесто: 087\nНомер билета: 76064507062280\nМесто: 088\nНомер биле
+ та: 76064507062291\nМесто: 090\nНомер билета: 76064507062302\nМесто: 093\n\
+ n
+LAST-MODIFIED:20210830T103202Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210831T154500Z
+DTEND:20210831T194300Z
+DTSTAMP:20230105T143622Z
+UID:6opjcdpp60sj0b9nc8p68b9kc8r6cb9o6dj3abb375im4ohmc8q34c9h6g@google.com
+CREATED:20210830T103758Z
+DESCRIPTION:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ\nПоезд №822ЧА\nВагон 
+ 04\nДата отправления: 31.08.2021\nВремя отправления: 18:45 (МСК)\nДата приб
+ ытия: 31.08.2021\nВремя прибытия: 22:43 (МСК)\nБилеты:\nНомер билета: 76064
+ 507078785\nМесто: 096\n\n
+LAST-MODIFIED:20210830T103758Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка СОРТАВАЛА ГОРОД - САНКТ-ПЕТЕРБУРГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210922T180000Z
+DTEND:20210922T190000Z
+DTSTAMP:20230105T143622Z
+UID:0mnp8bl9raaqrghmtt1u2cu5d3@google.com
+CREATED:20210918T222133Z
+DESCRIPTION:
+LAST-MODIFIED:20210918T222133Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:3ащита отчетов
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210922T133000Z
+DTEND:20210922T143000Z
+DTSTAMP:20230105T143622Z
+UID:3dj3tvdm8utlfi8q1fj0jf9891@google.com
+CREATED:20210918T230504Z
+DESCRIPTION:
+LAST-MODIFIED:20210918T230504Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Допса Организация
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210921T143000Z
+DTEND:20210921T153000Z
+DTSTAMP:20230105T143622Z
+UID:17ljm1dmp1ss6h3736i2b00fcd@google.com
+CREATED:20210918T230622Z
+DESCRIPTION:
+LAST-MODIFIED:20210918T230622Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Допса Каменные конструкции
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210921T123000Z
+DTEND:20210921T133000Z
+DTSTAMP:20230105T143622Z
+UID:2qf7qjgp4dln9asavuaqbvqil2@google.com
+CREATED:20210918T230928Z
+DESCRIPTION:
+LAST-MODIFIED:20210918T230928Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Допса Динамика
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210919T180000Z
+DTEND:20210919T190000Z
+DTSTAMP:20230105T143622Z
+UID:43t1nk2bu7dlsluvbhjski6g7g@google.com
+CREATED:20210918T231016Z
+DESCRIPTION:
+LAST-MODIFIED:20210918T231016Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Скинуть организацию
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210924T150000Z
+DTEND:20210924T173000Z
+DTSTAMP:20230105T143622Z
+UID:0msoibhlkg6hu2k8197trnj52a@google.com
+CREATED:20210921T121055Z
+DESCRIPTION:<a href="https://leader-id.ru/events/228088">Ссылка на мероприя
+ тие</a><br><br><!----> <p class="app-editor-paragraph app-paragraph app-par
+ agraph--sm">Организационное собрание для подведения итогов трудового сезона
+ \, а также информирования о предстоящих мероприятиях.</p> <!----> <!----> <
+ !----> <!----> <!----> <!---->
+LAST-MODIFIED:20210921T121055Z
+LOCATION:Санкт-Петербург\, ул. Политехническая\, д. 29\, литер о
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Собрание командных составов 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210922T143000Z
+DTEND:20210922T153000Z
+DTSTAMP:20230105T143622Z
+UID:2ro2ier0b0bdoo96jfqj6umvkq@google.com
+CREATED:20210918T230836Z
+DESCRIPTION:
+LAST-MODIFIED:20210922T085750Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Допса Фундаменты
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210922T113000Z
+DTEND:20210922T123000Z
+DTSTAMP:20230105T143622Z
+UID:4fldieq8q8k25liavpkdl50dh0@google.com
+CREATED:20210918T231148Z
+DESCRIPTION:
+LAST-MODIFIED:20210922T085755Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Допса Динамика (2)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210924T130000Z
+DTEND:20210924T140000Z
+DTSTAMP:20230105T143622Z
+UID:3fvspvaoqj4snfk979dgk706a8@google.com
+CREATED:20210918T231112Z
+DESCRIPTION:
+LAST-MODIFIED:20210923T223028Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Допса ТВ3
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20211001T150000Z
+DTEND:20211001T180000Z
+DTSTAMP:20230105T143622Z
+UID:2qpougme9n884nqhc7krpq1ues@google.com
+CREATED:20210927T124438Z
+DESCRIPTION:<a href="https://leader-id.ru/events/229842">Ссылка на мероприя
+ тие</a><br><br>
+LAST-MODIFIED:20210927T124438Z
+LOCATION:Санкт-Петербург\, ул. Политехническая\, д. 29\, литер о
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Выборы в командный состав ССО "Пламя"
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210929T200000Z
+DTEND:20210929T210000Z
+DTSTAMP:20230105T143622Z
+UID:1nn87hieajcq50pb5ldhmfnnat@google.com
+CREATED:20210927T130005Z
+DESCRIPTION:
+LAST-MODIFIED:20210927T130018Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:3акрытие обсуждения по выборам
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20210928T083000Z
+DTEND:20210928T090000Z
+DTSTAMP:20230105T143622Z
+UID:3t6h5u0fgfh03du5gu6prdal7r@google.com
+CREATED:20210928T082141Z
+DESCRIPTION:
+LAST-MODIFIED:20210928T082141Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Составление план сетки
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20211002T134500Z
+DTEND:20211002T144500Z
+DTSTAMP:20230105T143622Z
+UID:7ohqaf2d5cik8rnbegf3rc7o7k@google.com
+CREATED:20211002T120328Z
+DESCRIPTION:
+LAST-MODIFIED:20211002T120328Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Встреча 1
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20211002T170000Z
+DTEND:20211002T180000Z
+DTSTAMP:20230105T143622Z
+UID:7ucnklqllamgqkifm8qp05qbo4@google.com
+CREATED:20211002T120336Z
+DESCRIPTION:
+LAST-MODIFIED:20211002T120336Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Встреча 2
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20211002T110000Z
+DTEND:20211002T120000Z
+DTSTAMP:20230105T143622Z
+UID:7sm0krbdrko4phbvd0am66l2bq@google.com
+CREATED:20211002T120355Z
+DESCRIPTION:
+LAST-MODIFIED:20211002T120355Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Корпоративная почта
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20211007T170000Z
+DTEND:20211007T180000Z
+DTSTAMP:20230105T143622Z
+UID:255s0cls73usfe1trso191omi4@google.com
+CREATED:20211007T214453Z
+DESCRIPTION:
+LAST-MODIFIED:20211007T214453Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Выборы ПЦ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20211005T010000
+DTEND;TZID=Europe/Moscow:20211005T090000
+RRULE:FREQ=WEEKLY;UNTIL=20220207T205959Z;BYDAY=TU
+DTSTAMP:20230105T143622Z
+UID:1e5uhoa89nq3t116pehmorho46@google.com
+CREATED:20211004T175654Z
+DESCRIPTION:
+LAST-MODIFIED:20220210T110309Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Сон
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20211006T230000
+DTEND;TZID=Europe/Moscow:20211007T070000
+RRULE:FREQ=WEEKLY;UNTIL=20220208T205959Z;BYDAY=WE
+DTSTAMP:20230105T143622Z
+UID:0r026asi4eiv6tjcfjrd7bv4kt@google.com
+CREATED:20211004T175939Z
+DESCRIPTION:
+LAST-MODIFIED:20220210T110412Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Сон
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20211009T010000
+DTEND;TZID=Europe/Moscow:20211009T090000
+RRULE:FREQ=WEEKLY;WKST=SU;UNTIL=20220211T205959Z;INTERVAL=2;BYDAY=SA
+DTSTAMP:20230105T143622Z
+UID:61kqd6e9bicah9inircnoim5r4@google.com
+CREATED:20211004T180036Z
+DESCRIPTION:
+LAST-MODIFIED:20220210T110426Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Сон
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20211005T230000
+DTEND;TZID=Europe/Moscow:20211006T070000
+RRULE:FREQ=WEEKLY;UNTIL=20220214T205959Z;BYDAY=TU
+EXDATE;TZID=Europe/Moscow:20220208T230000
+DTSTAMP:20230105T143622Z
+UID:570o9if47gou4ohlid8turie7r@google.com
+CREATED:20211004T175858Z
+DESCRIPTION:
+LAST-MODIFIED:20220210T110447Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Сон
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220212T073000Z
+DTEND:20220212T080000Z
+DTSTAMP:20230105T143622Z
+UID:13ae9bkrklbf3dbkrdarqiafs0@google.com
+CREATED:20220212T111624Z
+DESCRIPTION:
+LAST-MODIFIED:20220212T111624Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Английский на слух
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220213T130000Z
+DTEND:20220213T160000Z
+DTSTAMP:20230105T143622Z
+UID:7nhi043pf7ifb139s35911pm62@google.com
+CREATED:20220212T111707Z
+DESCRIPTION:
+LAST-MODIFIED:20220212T111707Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:S2R встреча
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220212T070000Z
+DTEND:20220212T073000Z
+DTSTAMP:20230105T143622Z
+UID:7c9peu4f73h86k6sspqvcdttej@google.com
+CREATED:20220212T101955Z
+DESCRIPTION:
+LAST-MODIFIED:20220212T111718Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Зарядка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20220401
+DTEND;VALUE=DATE:20220403
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9tglrppsctendl0trr8q3fus6n8r6f9gg832t05o4jbb0q6d86blj0
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20220401T102631Z
+DESCRIPTION:Wonderland Flat Apartments\nSaint Petersburg\n\nCheck-in: 1 апр
+  2022 14:00\nCheck-out: 2 апр 2022 11:00\n
+LAST-MODIFIED:20220401T102631Z
+LOCATION:Wonderland Flat Apartments\, Saint Petersburg
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Wonderland Flat Apartments
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220428T140000Z
+DTEND:20220428T154500Z
+DTSTAMP:20230105T143622Z
+UID:7os8aqn4a7t77l4peogp56qdl6@google.com
+CREATED:20220428T140544Z
+DESCRIPTION:
+LAST-MODIFIED:20220428T140544Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:H/S 25.04
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220428T233000Z
+DTEND:20220429T001500Z
+DTSTAMP:20230105T143622Z
+UID:0p7ck4b2bec6kc71qs5rbsmrpg@google.com
+CREATED:20220428T233223Z
+DESCRIPTION:
+LAST-MODIFIED:20220428T235614Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:План-сетка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220429T001500Z
+DTEND:20220429T010000Z
+DTSTAMP:20230105T143622Z
+UID:4em0dl38qc4gfrvqufpdoeo3og@google.com
+CREATED:20220429T001321Z
+DESCRIPTION:
+LAST-MODIFIED:20220429T002404Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:H&S 25.04
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220429T110000Z
+DTEND:20220429T120000Z
+DTSTAMP:20230105T143622Z
+UID:39rtjkum3b6nvuqcq2uc3o9nqe@google.com
+CREATED:20220429T004226Z
+DESCRIPTION:
+LAST-MODIFIED:20220429T004226Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Пожарка (Кирик)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220501T150000Z
+DTEND:20220501T153000Z
+DTSTAMP:20230105T143622Z
+UID:ckq3cd1m74o38b9hc4r62b9kchgm4bb16hhj0b9icop3ce9i6dgj0e9i6g@google.com
+CREATED:20220501T150057Z
+DESCRIPTION:
+LAST-MODIFIED:20220501T150057Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Стирка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220501T183000Z
+DTEND:20220502T190000Z
+DTSTAMP:20230105T143622Z
+UID:6orm2cpp6osjcb9k6csj0b9k6ksj6b9oclgjabb4coom8o9lcoq3gp36ck@google.com
+CREATED:20220501T195418Z
+DESCRIPTION:
+LAST-MODIFIED:20220501T211855Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Душ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220501T213000Z
+DTEND:20220501T214000Z
+DTSTAMP:20230105T143622Z
+UID:64p68cr36gr3cb9o75imab9k61hjebb26sqj0bb1coq38or4cdh6apj370@google.com
+CREATED:20220501T211929Z
+DESCRIPTION:
+LAST-MODIFIED:20220501T211929Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Уборка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220501T221500Z
+DTEND:20220501T233000Z
+DTSTAMP:20230105T143622Z
+UID:clijap9j6gsm2b9k6cq3eb9k75i6ab9pc9j3ib9i6hhj0e9p74sj0eb160@google.com
+CREATED:20220501T221403Z
+DESCRIPTION:
+LAST-MODIFIED:20220501T221403Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Перек
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220502T010000Z
+DTEND:20220502T020000Z
+DTSTAMP:20230105T143622Z
+UID:c4oj2cr16sqmcbb2c5i38b9k74p62b9o60rm8bb674sm8p1n70q68c31co@google.com
+CREATED:20220502T005738Z
+DESCRIPTION:
+LAST-MODIFIED:20220502T005738Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Уборка\, посуда
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220502T000000Z
+DTEND:20220502T010000Z
+DTSTAMP:20230105T143622Z
+UID:cdgjgoj3cos64b9mccs34b9k61gm8bb26soj2b9m70s3ac1hchh3edb570@google.com
+CREATED:20220502T005807Z
+DESCRIPTION:
+LAST-MODIFIED:20220502T005807Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Разморозка холодильника
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220502T020000Z
+DTEND:20220502T030000Z
+DTSTAMP:20230105T143622Z
+UID:6kr3goj16cq3ib9g70r3gb9k69h3gb9pcksjgb9hckpjcchoclim2d9p60@google.com
+CREATED:20220502T021418Z
+DESCRIPTION:
+LAST-MODIFIED:20220502T021418Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220503T010000Z
+DTEND:20220503T021500Z
+DTSTAMP:20230105T143622Z
+UID:6sr3ie1hcco64bb2cgs3gb9kcoojebb265i6ab9kcph30ohm6krj8dpn6o@google.com
+CREATED:20220503T021316Z
+DESCRIPTION:
+LAST-MODIFIED:20220503T021316Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка\, суп
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220503T233000Z
+DTEND:20220504T011500Z
+DTSTAMP:20230105T143622Z
+UID:7j9tu026cg0kfgqtvr7uregl4n@google.com
+CREATED:20220503T234106Z
+DESCRIPTION:
+LAST-MODIFIED:20220504T011035Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Планирование
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220504T011500Z
+DTEND:20220504T021500Z
+DTSTAMP:20230105T143622Z
+UID:5hbrnk9cu5cjv1ca09gpp4fej0@google.com
+CREATED:20220504T011120Z
+DESCRIPTION:Хот-доги
+LAST-MODIFIED:20220504T022718Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Готовка 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220504T043000Z
+DTEND:20220504T060000Z
+DTSTAMP:20230105T143622Z
+UID:07dnpduo1eoattec4vamg7dn6b@google.com
+CREATED:20220504T055057Z
+DESCRIPTION:
+LAST-MODIFIED:20220504T055057Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Практика | документы\, письма
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220508T051500Z
+DTEND:20220508T060000Z
+DTSTAMP:20230105T143622Z
+UID:6oqjadpl6him8b9j74s3ib9k75gj8b9pckq3ibb668q3gcplcosm4c33co@google.com
+CREATED:20220508T061518Z
+DESCRIPTION:
+LAST-MODIFIED:20220508T061518Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220508T213000Z
+DTEND:20220508T223000Z
+DTSTAMP:20230105T143622Z
+UID:c9hj8cpi68r32bb174o62b9kccsj8b9p68pj2b9lc4s38pj66lj3goppcg@google.com
+CREATED:20220509T001825Z
+DESCRIPTION:
+LAST-MODIFIED:20220509T001825Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Книга\, энергоэффективность
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220509T023000Z
+DTEND:20220509T030000Z
+DTSTAMP:20230105T143622Z
+UID:74sm6d3475j6cb9k6hi30b9kc4s3ab9o6phjcb9k70sjad9n6lim8c1nck@google.com
+CREATED:20220509T030803Z
+DESCRIPTION:
+LAST-MODIFIED:20220509T030803Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовке\, суп
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220518T083000Z
+DTEND:20220518T093000Z
+DTSTAMP:20230105T143622Z
+UID:6dgj0ob2coomab9jchij2b9k71j3abb26dh3abb260p32p9mc8q6ad1jco@google.com
+CREATED:20220518T082454Z
+DESCRIPTION:
+LAST-MODIFIED:20220518T082454Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовке супа
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220524T203000Z
+DTEND:20220524T223000Z
+DTSTAMP:20230105T143622Z
+UID:6grmacr66srjgb9m74q3gb9kc8s68b9o6ks34b9o6ooj0eb465gj6dhmck@google.com
+CREATED:20220524T224846Z
+DESCRIPTION:
+LAST-MODIFIED:20220524T224846Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Суп
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220527T233000Z
+DTEND:20220528T003000Z
+DTSTAMP:20230105T143622Z
+UID:cdhjcp9nc9gmab9n65gm6b9kcks3gbb2cgqj2b9p75i30c1p6crmcchhco@google.com
+CREATED:20220528T003828Z
+DESCRIPTION:
+LAST-MODIFIED:20220528T003840Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | рис
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220602T200000Z
+DTEND:20220602T220000Z
+DTSTAMP:20230105T143622Z
+UID:74sj2pb6cpim8b9lclgjgb9k69i36bb2cosjeb9lcdgj0e35ccr3ap1pco@google.com
+CREATED:20220602T200719Z
+DESCRIPTION:
+LAST-MODIFIED:20220602T222538Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | грибной суп
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220602T210000Z
+DTEND:20220602T223000Z
+DTSTAMP:20230105T143622Z
+UID:corj0dr36koj8bb6cdj32b9k6cq30bb26dgm4b9jcgp6ad1p68q3ed3370@google.com
+CREATED:20220602T222602Z
+DESCRIPTION:
+LAST-MODIFIED:20220602T222602Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | удон
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220615T130000Z
+DTEND:20220615T140000Z
+DTSTAMP:20230105T143622Z
+UID:ccq62d1jccr3gbb1ccsjeb9k75hj0b9oc8pmcbb2cksj6p1i6osmadhi74@google.com
+CREATED:20220612T152000Z
+DESCRIPTION:
+LAST-MODIFIED:20220612T152000Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Приоритет 2030
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220622T191500Z
+DTEND:20220623T031100Z
+DTSTAMP:20230105T143622Z
+UID:61j32cpi6osj0bb460pj4b9kcgs36b9pcoom8bb3chh62d9n60oj6p3270@google.com
+CREATED:20220617T213551Z
+DESCRIPTION:Поездка САНКТ-ПЕТЕРБУРГ ЛАДОЖ. - МОСКВА ОКТЯБРЬСКАЯ (ЛЕНИНГРАДС
+ КИЙ ВОКЗАЛ)\nПоезд 289АА\nВагон 04\nДата отправления: 22.06.2022\nВремя отп
+ равления: 22:15 Местное (МСК)\nДата прибытия: 23.06.2022\nВремя прибытия: 0
+ 6:11 Местное (МСК)\nБилеты:\nНомер билета: 74321968577030\nМесто: 054\n\n
+LAST-MODIFIED:20220617T213551Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка САНКТ-ПЕТЕРБУРГ ЛАДОЖ. - МОСКВА ОКТЯБРЬСКАЯ (ЛЕНИНГРАДСКИЙ 
+ ВОКЗАЛ)
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT2H0M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220622T163000Z
+DTEND:20220622T173000Z
+DTSTAMP:20230105T143622Z
+UID:coo30ob56co3gbb675gm4b9k71imcb9o6sr6ab9g6orj2d1kcor3ap1i64@google.com
+CREATED:20220622T193344Z
+DESCRIPTION:
+LAST-MODIFIED:20220622T193344Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Упаковка вещей в рюкзак
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220622T153000Z
+DTEND:20220622T160000Z
+DTSTAMP:20230105T143622Z
+UID:clhjac1m6hgm8b9p6pj3gb9k65i34b9p69h3eb9lccr3gohicgo62d1m6c@google.com
+CREATED:20220622T193409Z
+DESCRIPTION:
+LAST-MODIFIED:20220622T193409Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Разморозка холодильника
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220622T140000Z
+DTEND:20220622T153000Z
+DTSTAMP:20230105T143622Z
+UID:coo32p36cor3ibb6c4rjcb9k6sqm2bb26ks34b9g61i6ccj5c4o3ae9ncc@google.com
+CREATED:20220622T193424Z
+DESCRIPTION:
+LAST-MODIFIED:20220622T193424Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Уборка\, мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220622T130000Z
+DTEND:20220622T133000Z
+DTSTAMP:20230105T143622Z
+UID:61i62dpgchgjcbb274qm4b9kcgpjib9pcorj6bb1cko3gopp68s34pj364@google.com
+CREATED:20220622T193435Z
+DESCRIPTION:
+LAST-MODIFIED:20220622T193435Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Уборка\, мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220626T190000Z
+DTEND:20220626T191500Z
+DTSTAMP:20230105T143622Z
+UID:6dhj4e33cdh64bb268qmab9kc4s34b9o6gs3ibb66orjacb46lj36e9j6s@google.com
+CREATED:20220626T120939Z
+DESCRIPTION:
+LAST-MODIFIED:20220626T120939Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Купить гель для душа
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220628T191500Z
+DTEND:20220628T193000Z
+DTSTAMP:20230105T143622Z
+UID:74p3gp1lchhjgb9lc5h62b9k6ph30bb16cojcb9o6lj64cb1c8rjcphj74@google.com
+CREATED:20220628T063523Z
+DESCRIPTION:
+LAST-MODIFIED:20220628T063523Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Купить молоко
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220705T184000Z
+DTEND:20220706T021900Z
+DTSTAMP:20230105T143622Z
+UID:6cojco9i6or6cb9mc8r3ab9kckq32bb2cop32b9lc4pm6pj36dim6phhcg@google.com
+CREATED:20220629T082055Z
+DESCRIPTION:Поездка МОСКВА ОКТЯБРЬСКАЯ (ЛЕНИНГРАДСКИЙ ВОКЗАЛ) - САНКТ-ПЕТЕР
+ БУРГ-ГЛАВН. (МОСКОВСКИЙ ВОКЗАЛ)\nПоезд 056АА\nВагон 01\nДата отправления: 0
+ 5.07.2022\nВремя отправления: 21:40 Местное (МСК)\nДата прибытия: 06.07.202
+ 2\nВремя прибытия: 05:19 Местное (МСК)\nБилеты:\nНомер билета: 746720157697
+ 44\nМесто: 054\n\n
+LAST-MODIFIED:20220629T082055Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка МОСКВА ОКТЯБРЬСКАЯ (ЛЕНИНГРАДСКИЙ ВОКЗАЛ) - САНКТ-ПЕТЕРБУРГ
+ -ГЛАВН. (МОСКОВСКИЙ ВОКЗАЛ)
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT2H0M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220630T191500Z
+DTEND:20220630T193000Z
+DTSTAMP:20230105T143622Z
+UID:cgrmae3470o38bb3cksmab9k65h3abb270o34b9l64o3achl68om8e1g6o@google.com
+CREATED:20220630T084408Z
+DESCRIPTION:
+LAST-MODIFIED:20220630T084408Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Купить молоко
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220705T170000Z
+DTEND:20220705T180000Z
+DTSTAMP:20230105T143622Z
+UID:ckrjco9o70sjabb574pjgb9kc5ijib9ocli32b9g6lim2d1ic4o3gd1n6s@google.com
+CREATED:20220703T122906Z
+DESCRIPTION:
+LAST-MODIFIED:20220703T122925Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Дорога до вокзала
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20220623
+DTEND;VALUE=DATE:20220705
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9tmf4jeg02eab8heg7t4652acido4cr38hic4qep77cltdhn3s3l60
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20220623T051235Z
+DESCRIPTION:Хостел Рус Окружная\nMoscow\n+7 962 927-47-26\n\nCheck-in: 23 и
+ юн 2022 13:00\nCheck-out: 24 июн 2022 12:00\n
+LAST-MODIFIED:20220706T094331Z
+LOCATION:Хостел Рус Окружная\, Moscow
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Хостел Рус Окружная
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220704T060000Z
+DTEND:20220704T063000Z
+DTSTAMP:20230105T143622Z
+UID:6cq3ep9k74sjabb568qj2b9k69gm2b9pc8rj0b9g75i62c1j70p6cor26k@google.com
+CREATED:20220703T123723Z
+DESCRIPTION:
+LAST-MODIFIED:20220708T124147Z
+LOCATION:
+SEQUENCE:4
+STATUS:CONFIRMED
+SUMMARY:Документы о проживании
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220706T110000Z
+DTEND:20220706T151500Z
+DTSTAMP:20230105T143622Z
+UID:69i3io9g6pj6cb9m6somab9kcor36b9ochj68bb668oj2opj74rj8chpc4@google.com
+CREATED:20220704T064521Z
+DESCRIPTION:
+LAST-MODIFIED:20220708T134216Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Практика\, отчёт
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220708T134500Z
+DTEND:20220708T144500Z
+DTSTAMP:20230105T143622Z
+UID:68o36cj56crm8bb174r6ab9kcgq3ib9pckoj6bb36pijacb36tgm2cj160@google.com
+CREATED:20220709T134115Z
+DESCRIPTION:
+LAST-MODIFIED:20220709T134115Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Курица с макаронами
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220710T124500Z
+DTEND:20220710T130000Z
+DTSTAMP:20230105T143622Z
+UID:ccq3cdpm64r3ebb46th32b9kcdj34b9p6krm2bb46gp30ob26dgj2d9occ@google.com
+CREATED:20220710T131649Z
+DESCRIPTION:
+LAST-MODIFIED:20220710T131649Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Запросить счёт в хостеле
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220726T151500Z
+DTEND:20220726T153000Z
+DTSTAMP:20230105T143622Z
+UID:c4r3goj6c4sm8b9hclh34b9kcoq6cbb174o3ab9h61j32or561hjcp1i6s@google.com
+CREATED:20220726T144324Z
+DESCRIPTION:
+LAST-MODIFIED:20220726T144324Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Стирка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220726T173000Z
+DTEND:20220726T174500Z
+DTSTAMP:20230105T143622Z
+UID:68s3idpo61j3gb9icpij0b9k6dij6bb2cphm2b9jcgpj6p9k6ks3gpb36o@google.com
+CREATED:20220726T190636Z
+DESCRIPTION:
+LAST-MODIFIED:20220726T190636Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Стирка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220726T220000Z
+DTEND:20220727T011500Z
+DTSTAMP:20230105T143622Z
+UID:cco36c9lcos3gbb464o62b9kcks3ebb1cgpm8bb2c5hj2dr569h34ob16o@google.com
+CREATED:20220727T065121Z
+DESCRIPTION:
+LAST-MODIFIED:20220727T065121Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка (суп\, макароны)\, мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220801T225800Z
+DTEND:20220802T071600Z
+DTSTAMP:20230105T143622Z
+UID:cgr6cob26ks66bb1c9hjgb9kc8o64bb26dhjeb9n60rj0d1o70o32c9i6o@google.com
+CREATED:20220727T145405Z
+DESCRIPTION:Поездка САНКТ-ПЕТЕРБУРГ-ГЛАВН. (МОСКОВСКИЙ ВОКЗАЛ) - МОСКВА ОКТ
+ ЯБРЬСКАЯ (ЛЕНИНГРАДСКИЙ ВОКЗАЛ)\nПоезд 231ВА\nВагон 01\nДата отправления: 0
+ 2.08.2022\nВремя отправления: 01:58 Местное (МСК)\nДата прибытия: 02.08.202
+ 2\nВремя прибытия: 10:16 Местное (МСК)\nБилеты:\nНомер билета: 753770771903
+ 52\nМесто: 032\n\n
+LAST-MODIFIED:20220727T145405Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка САНКТ-ПЕТЕРБУРГ-ГЛАВН. (МОСКОВСКИЙ ВОКЗАЛ) - МОСКВА ОКТЯБРЬ
+ СКАЯ (ЛЕНИНГРАДСКИЙ ВОКЗАЛ)
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT2H0M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220727T141500Z
+DTEND:20220727T151500Z
+DTSTAMP:20230105T143622Z
+UID:60sjacj568s32b9p74sj8b9k60p3cb9pcdgmcbb368sm6ohhc4q3gd3560@google.com
+CREATED:20220727T151520Z
+DESCRIPTION:
+LAST-MODIFIED:20220727T151520Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ЛШ | билеты\, взнос
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220801T193000Z
+DTEND:20220801T204500Z
+DTSTAMP:20230105T143622Z
+UID:ckrm4pj660pjcb9jcgo6ab9kcdgj0bb2c8qm6b9o71gjcp1lccq34c9k6g@google.com
+CREATED:20220801T210140Z
+DESCRIPTION:
+LAST-MODIFIED:20220801T210140Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Подготовка к отъезду: посуда\, вещи\, уборка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220801T124500Z
+DTEND:20220801T150000Z
+DTSTAMP:20230105T143622Z
+UID:64pm2o9gc9j30b9g6dh6ab9k6lj64bb26ph38bb665hjie1hcdhjec1ick@google.com
+CREATED:20220801T231407Z
+DESCRIPTION:
+LAST-MODIFIED:20220801T231407Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Подготовка к отъезду
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220802T071500Z
+DTEND:20220802T074500Z
+DTSTAMP:20230105T143622Z
+UID:68qm6e3361ijibb6ccrjib9k65hm2b9o6sr3ab9m74oj8dj66kqj0e1ic4@google.com
+CREATED:20220802T074604Z
+DESCRIPTION:
+LAST-MODIFIED:20220802T074604Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Дорога до места встречи (27 мин)
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220802T080000Z
+DTEND:20220802T110000Z
+DTSTAMP:20230105T143622Z
+UID:6oom4cpn6dim6bb3c9hj2b9kcoq38bb174oj4bb5c5h3gopgc4sj8d1k74@google.com
+CREATED:20220802T224128Z
+DESCRIPTION:
+LAST-MODIFIED:20220802T224128Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Дорога до ЛШ | Автобус
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220812T202400Z
+DTEND:20220813T070500Z
+DTSTAMP:20230105T143622Z
+UID:6or3gp1k6dimcbb6c4sj0b9kc5i38b9p6limab9l70om8ohj6dijic3670@google.com
+CREATED:20220809T155252Z
+DESCRIPTION:Поездка МОСКВА ВК ВОСТОЧНЫЙ (ТЕРМИНАЛ ЧЕРКИЗОВО) - САНКТ-ПЕТЕРБ
+ УРГ-ГЛАВН. (МОСКОВСКИЙ ВОКЗАЛ)\nПоезд 050*ЧА\nВагон 03\nДата отправления: 1
+ 2.08.2022\nВремя отправления: 23:24 Местное (МСК)\nДата прибытия: 13.08.202
+ 2\nВремя прибытия: 10:05 Местное (МСК)\nБилеты:\nНомер билета: 756271263781
+ 14\nМесто: 027\n\n
+LAST-MODIFIED:20220809T155252Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поездка МОСКВА ВК ВОСТОЧНЫЙ (ТЕРМИНАЛ ЧЕРКИЗОВО) - САНКТ-ПЕТЕРБУРГ-
+ ГЛАВН. (МОСКОВСКИЙ ВОКЗАЛ)
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT2H0M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220818T120000Z
+DTEND:20220818T130000Z
+DTSTAMP:20230105T143622Z
+UID:0vq29hfjrun1r8g2r8gr9494je@google.com
+CREATED:20220818T142456Z
+DESCRIPTION:
+LAST-MODIFIED:20220818T142456Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Попытка сделать вентилятор 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220819T094500Z
+DTEND:20220819T100000Z
+DTSTAMP:20230105T143622Z
+UID:3kp2jjlenm30paebkn64jjod7e@google.com
+CREATED:20220819T103330Z
+DESCRIPTION:
+LAST-MODIFIED:20220819T103330Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220822T000000Z
+DTEND:20220822T010000Z
+DTSTAMP:20230105T143622Z
+UID:33g8404ins1u2id3vr50b2su2d@google.com
+CREATED:20220822T004647Z
+DESCRIPTION:
+LAST-MODIFIED:20220822T004647Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Чечевичный суп
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220819T140000Z
+DTEND:20220819T150000Z
+DTSTAMP:20230105T143622Z
+UID:03e8iii5567r3esf26bnff588e@google.com
+CREATED:20220822T004711Z
+DESCRIPTION:
+LAST-MODIFIED:20220822T004711Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Карбонара 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220823T050000Z
+DTEND:20220823T053000Z
+DTSTAMP:20230105T143622Z
+UID:c4r6aob36hj3abb66pj30b9kcdh38bb2c9i3cb9pc8rm6cj16hij8ob16o@google.com
+CREATED:20220823T113747Z
+DESCRIPTION:
+LAST-MODIFIED:20220823T113747Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Посуда
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220824T210000Z
+DTEND:20220824T224500Z
+DTSTAMP:20230105T143622Z
+UID:60omacr36go32bb6c5i62b9kc8sm6bb1c8sjibb16osjad32cgojco9occ@google.com
+CREATED:20220825T153458Z
+DESCRIPTION:
+LAST-MODIFIED:20220825T153507Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | курица
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220826T150000Z
+DTEND:20220826T160000Z
+DTSTAMP:20230105T143622Z
+UID:61hmacb361j62b9ncop62b9k6oqm2b9ockojcb9l6lj68c9j6sq3ec9g60@google.com
+CREATED:20220826T060708Z
+DESCRIPTION:
+LAST-MODIFIED:20220826T060708Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Недвига
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220826T080000Z
+DTEND:20220826T083000Z
+DTSTAMP:20230105T143622Z
+UID:69ij2dpi64rm6b9hcksj2b9k6kpjeb9o61i6cb9j65h66opm74sjedpo74@google.com
+CREATED:20220826T075323Z
+DESCRIPTION:
+LAST-MODIFIED:20220826T075323Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Пост | ЛШ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220830T134500Z
+DTEND:20220830T140000Z
+DTSTAMP:20230105T143622Z
+UID:6cqj2d336dijib9kcooj6b9k6phm8b9pc8qm8b9h6gpj2ob56hijgc9p6c@google.com
+CREATED:20220830T135139Z
+DESCRIPTION:
+LAST-MODIFIED:20220830T135139Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Стирка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220830T171500Z
+DTEND:20220830T173000Z
+DTSTAMP:20230105T143622Z
+UID:68r38d1j6oom4b9m6ks38b9kclgj0b9o64qmabb46hi3ec1g6sq3adb470@google.com
+CREATED:20220830T145530Z
+DESCRIPTION:
+LAST-MODIFIED:20220830T145537Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Стирка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220831T190000Z
+DTEND:20220831T200000Z
+DTSTAMP:20230105T143622Z
+UID:ccoj4c9j6cr68b9i64p64b9kc5gjebb1cdhjcb9gc8p62p1p61i34cb46o@google.com
+CREATED:20220831T222446Z
+DESCRIPTION:
+LAST-MODIFIED:20220831T222446Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Планирование | Deli
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220901T203000Z
+DTEND:20220901T213000Z
+DTSTAMP:20230105T143622Z
+UID:56jh0r5pm3hquh4e5f4p75deh4@google.com
+CREATED:20220901T213020Z
+DESCRIPTION:
+LAST-MODIFIED:20220901T213020Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Макароны с фаршем
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220901T223000Z
+DTEND:20220902T000000Z
+DTSTAMP:20230105T143622Z
+UID:6sqjecph70sjab9p6opj0b9k75hjibb16os30bb374r3echm60o32e9j64@google.com
+CREATED:20220901T234834Z
+DESCRIPTION:
+LAST-MODIFIED:20220901T234834Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220902T000000Z
+DTEND:20220902T001500Z
+DTSTAMP:20230105T143622Z
+UID:cpimaopn74p3ib9nc5gjab9k71hjcbb174om2b9gc5hjaob2ckrmap1j6k@google.com
+CREATED:20220902T002717Z
+DESCRIPTION:
+LAST-MODIFIED:20220902T002717Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Уборка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220903T164500Z
+DTEND:20220903T173000Z
+DTSTAMP:20230105T143622Z
+UID:74oj8cb661i68b9k60pj8b9k6hj36b9o74r6abb5c4pj2dr6c8p68oj660@google.com
+CREATED:20220903T161857Z
+DESCRIPTION:
+LAST-MODIFIED:20220903T183853Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Аня | Полочки
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220903T231500Z
+DTEND:20220904T011500Z
+DTSTAMP:20230105T143622Z
+UID:189231qsg9pg8m32cgd07sav5j@google.com
+CREATED:20220904T003256Z
+DESCRIPTION:
+LAST-MODIFIED:20220904T003256Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Борщ 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220910T180000Z
+DTEND:20220910T203000Z
+DTSTAMP:20230105T143622Z
+UID:6gp32d9jc9j62b9j6phm4b9k6ph68bb16orm4b9l60o36e1g6thjio9ic4@google.com
+CREATED:20220910T205027Z
+DESCRIPTION:
+LAST-MODIFIED:20220910T205027Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Макароны + суп
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220913T160000Z
+DTEND:20220913T180000Z
+DTSTAMP:20230105T143622Z
+UID:cksjce1h6tgj4b9ic4p68b9k6spjibb270o3eb9h68q6cchocdijgopn60@google.com
+CREATED:20220913T182442Z
+DESCRIPTION:
+LAST-MODIFIED:20220913T182442Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Заболел живот
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220914T120000Z
+DTEND:20220914T170000Z
+DTSTAMP:20230105T143622Z
+UID:chgjiopi71h68bb360o3ib9kccsjebb160ojab9l6krj2c1p68sjcdr2cc@google.com
+CREATED:20220914T172622Z
+DESCRIPTION:
+LAST-MODIFIED:20220914T172622Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Отлеживался
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220916T110000Z
+DTEND:20220916T123000Z
+DTSTAMP:20230105T143622Z
+UID:cgqjaoph6pi36bb660o3ab9k6co38b9o6os66b9m6him6p34c4q3gphk6k@google.com
+CREATED:20220918T120436Z
+DESCRIPTION:
+LAST-MODIFIED:20220918T120436Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Финбан -- Заходское
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220916T093000Z
+DTEND:20220916T101500Z
+DTSTAMP:20230105T143622Z
+UID:71gm4or668s3ebb160o68b9k74rj0b9ocdh62b9hc9hm8cpk6gojie9gc4@google.com
+CREATED:20220918T120608Z
+DESCRIPTION:
+LAST-MODIFIED:20220918T120608Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Сбор вещей
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220917T163000Z
+DTEND:20220917T180000Z
+DTSTAMP:20230105T143622Z
+UID:cli6adplcdh68b9i61j6cb9k74qjab9o6pij6bb16th36ob268s3ecplc4@google.com
+CREATED:20220918T121335Z
+DESCRIPTION:
+LAST-MODIFIED:20220918T121335Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Заходское -- Финбан
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220918T210000Z
+DTEND:20220918T230000Z
+DTSTAMP:20230105T143622Z
+UID:4dt3kg3kvmgft3vms91ghgqi0u@google.com
+CREATED:20220919T205240Z
+LAST-MODIFIED:20220919T205240Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Пюре с печенью
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220919T200000Z
+DTEND:20220919T220000Z
+DTSTAMP:20230105T143622Z
+UID:75b2rgppfde0tvi6prpcfi960d@google.com
+CREATED:20220919T210539Z
+DESCRIPTION:
+LAST-MODIFIED:20220919T213147Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Организация
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220921T060000Z
+DTEND:20220921T070000Z
+DTSTAMP:20230105T143622Z
+UID:c4sm4oj668o38b9oc4o66b9k6cpjeb9p6oq32b9g71i30db36co38chi70@google.com
+CREATED:20220921T231253Z
+LAST-MODIFIED:20220921T231253Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Путин объявляет мобилизацию
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220927T190000Z
+DTEND:20220927T194500Z
+DTSTAMP:20230105T143622Z
+UID:07vrtn4ao4s3qpd80gv70dtafh@google.com
+CREATED:20220927T192134Z
+DESCRIPTION:
+LAST-MODIFIED:20220927T195651Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Загранпаспорт
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220926T203000Z
+DTEND:20220926T223000Z
+DTSTAMP:20230105T143622Z
+UID:1nhl2oqbhkq53v12i70t9f2uln@google.com
+CREATED:20220927T200208Z
+LAST-MODIFIED:20220927T200208Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка\, посуда |  Курица
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220928T054500Z
+DTEND:20220928T070000Z
+DTSTAMP:20230105T143622Z
+UID:3u94peeg6j29i2qtu673t13a1t@google.com
+CREATED:20220927T195931Z
+DESCRIPTION:Безуспешно. У них ремонт\, нужно переподавать в другой район
+LAST-MODIFIED:20220928T065233Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Загранпаспорт
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220928T213000Z
+DTEND:20220928T230000Z
+DTSTAMP:20230105T143622Z
+UID:ckr6ccb26crm2b9n60rj4b9k61j3ib9pcphm8bb36pj38eb4c4pj0chi6g@google.com
+CREATED:20220929T121423Z
+LAST-MODIFIED:20220929T121423Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Роллы
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221002T203000Z
+DTEND:20221002T223000Z
+DTSTAMP:20230105T143622Z
+UID:4fq3dt6fnloir6tdk40lv4gmnm@google.com
+CREATED:20221004T002050Z
+LAST-MODIFIED:20221004T002050Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Грибной суп
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221002T160000Z
+DTEND:20221002T181500Z
+DTSTAMP:20230105T143622Z
+UID:537d1gve53f2cc21oh9cs2rpk9@google.com
+CREATED:20221004T002014Z
+DESCRIPTION:
+LAST-MODIFIED:20221004T002059Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Болоньезе
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220925T110000Z
+DTEND:20220925T204500Z
+DTSTAMP:20230105T143622Z
+UID:3jpaf01cdjdqfas755cs7j87h8@google.com
+CREATED:20221004T002705Z
+LAST-MODIFIED:20221004T002705Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:?
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20220924T113000Z
+DTEND:20220924T203000Z
+DTSTAMP:20230105T143622Z
+UID:0vu794j581ibork9atqi5f9nqi@google.com
+CREATED:20221004T002720Z
+LAST-MODIFIED:20221004T002720Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:?
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221006T194500Z
+DTEND:20221006T201500Z
+DTSTAMP:20230105T143622Z
+UID:6cp32pj360oj0b9icgq68b9k70ojibb271i3ib9l74p66d9m69h32dhj6o@google.com
+CREATED:20221007T072653Z
+LAST-MODIFIED:20221007T072653Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Роллы
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221013T003000Z
+DTEND:20221013T013000Z
+DTSTAMP:20230105T143622Z
+UID:64s38cb36sqj0b9n74s6ab9kc5ijebb16komabb461j66ohgcgp34dj4c8@google.com
+CREATED:20221013T061425Z
+LAST-MODIFIED:20221013T061425Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221011T220000Z
+DTEND:20221011T230000Z
+DTSTAMP:20230105T143622Z
+UID:6sq36c3364r3eb9j6oq62b9kcgo34bb169hj6b9hc8qj2pb56di6ae9lco@google.com
+CREATED:20221013T062324Z
+LAST-MODIFIED:20221013T062324Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | фунчоза с курицей
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221014T073000Z
+DTEND:20221014T080000Z
+DTSTAMP:20230105T143622Z
+UID:cdhj0pb26sr34bb561j68b9k6pi32bb2cdhj8b9m6soj6d33c8o32dr26o@google.com
+CREATED:20221013T105114Z
+DESCRIPTION:
+LAST-MODIFIED:20221015T095125Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Поздравить батю
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221015T223000Z
+DTEND:20221015T233000Z
+DTSTAMP:20230105T143622Z
+UID:25jp77018kcjen2iopmnfr5qeb@google.com
+CREATED:20221016T145338Z
+DESCRIPTION:
+LAST-MODIFIED:20221016T145341Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Гуляш
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221015T233000Z
+DTEND:20221016T003000Z
+DTSTAMP:20230105T143622Z
+UID:37fam5gl1i7ep9gb25ghqm40iv@google.com
+CREATED:20221016T145346Z
+LAST-MODIFIED:20221016T145346Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Посуда
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221016T150000Z
+DTEND:20221016T154500Z
+DTSTAMP:20230105T143622Z
+UID:108fafk5gttnkfnn47dp79nvhd@google.com
+CREATED:20221016T154003Z
+LAST-MODIFIED:20221016T154003Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Уборка | Модернизация кухни
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221024T200000Z
+DTEND:20221024T223000Z
+DTSTAMP:20230105T143622Z
+UID:1vadgn09dejmv3fg6659hrmvd6@google.com
+CREATED:20221028T184954Z
+LAST-MODIFIED:20221028T184954Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Грудка\, макароны
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221028T183000Z
+DTEND:20221028T191500Z
+DTSTAMP:20230105T143622Z
+UID:2ubek2tg2d4d992ltcsb0dv5of@google.com
+CREATED:20221028T185326Z
+LAST-MODIFIED:20221028T185326Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Календарь
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221024T230000Z
+DTEND:20221024T234500Z
+DTSTAMP:20230105T143622Z
+UID:198uoo3hsep2nppnuqv4od9d9n@google.com
+CREATED:20221028T185037Z
+DESCRIPTION:
+LAST-MODIFIED:20221028T191038Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Посуда\, уборка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221024T163000Z
+DTEND:20221024T173000Z
+DTSTAMP:20230105T143622Z
+UID:5ttnrprot4jjqa0k0ub534ece9@google.com
+CREATED:20221029T184745Z
+LAST-MODIFIED:20221029T184745Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Уборка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221029T073000Z
+DTEND:20221029T081500Z
+DTSTAMP:20230105T143622Z
+UID:6gsjedpi6dj6ab9m61i64b9kc8pjibb26gr64b9k6hgjiopnc4sj8o9o6s@google.com
+CREATED:20220929T131335Z
+DESCRIPTION:
+LAST-MODIFIED:20221030T150558Z
+LOCATION:
+SEQUENCE:6
+STATUS:CONFIRMED
+SUMMARY:Загран
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221030T224500Z
+DTEND:20221031T001500Z
+DTSTAMP:20230105T143622Z
+UID:6fhnm9eskbqn4b6dq95erj16g3@google.com
+CREATED:20221031T001826Z
+LAST-MODIFIED:20221031T001826Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды\, уборка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221031T134500Z
+DTEND:20221031T144500Z
+DTSTAMP:20230105T143622Z
+UID:04m44ne5uhkmohudp6nu1bmh24@google.com
+CREATED:20221031T230350Z
+DESCRIPTION:
+LAST-MODIFIED:20221031T230402Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Готовка: куриные бедра
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221101T141500Z
+DTEND:20221101T144500Z
+DTSTAMP:20230105T143622Z
+UID:cdh3ge32copj8bb260o3ab9kc4pj4b9p61j30bb470r6ap1icoom2cr4c4@google.com
+CREATED:20221101T085102Z
+DESCRIPTION:
+LAST-MODIFIED:20221101T175259Z
+LOCATION:
+SEQUENCE:2
+STATUS:CONFIRMED
+SUMMARY:Записаться к зубному
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221101T180000Z
+DTEND:20221101T190000Z
+DTSTAMP:20230105T143622Z
+UID:1ss69p9pdlcvsb74bcpvh6k52k@google.com
+CREATED:20221101T202059Z
+LAST-MODIFIED:20221101T202059Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Записаться Deli
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221104T150000Z
+DTEND:20221104T151500Z
+DTSTAMP:20230105T143622Z
+UID:cksm4dpo6kr3cb9i71h68b9k71gjcb9pcopjeb9l6kq3gob56pi3idplcc@google.com
+CREATED:20221101T081943Z
+DESCRIPTION:
+LAST-MODIFIED:20221104T143039Z
+LOCATION:
+SEQUENCE:6
+STATUS:CONFIRMED
+SUMMARY:Стирка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221104T170000Z
+DTEND:20221104T171500Z
+DTSTAMP:20230105T143622Z
+UID:70r64d3364oj0b9h6dijeb9kc9h64bb1ckrj0b9m68rjce1l68sm6pb3cc@google.com
+CREATED:20221105T061917Z
+LAST-MODIFIED:20221105T061917Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Стирка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221106T213000Z
+DTEND:20221106T230000Z
+DTSTAMP:20230105T143622Z
+UID:74p38chgc4o6cbb4c5hm8b9kc4sm6b9p65hjebb36kojip1kcoo36d1gco@google.com
+CREATED:20221107T001205Z
+LAST-MODIFIED:20221107T001205Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Карбонара
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221106T230000Z
+DTEND:20221107T001500Z
+DTSTAMP:20230105T143622Z
+UID:74rjidpn64r6ab9i74ojab9kcks3ibb1c9gjeb9iccs3eob268r32dr5cg@google.com
+CREATED:20221107T001213Z
+LAST-MODIFIED:20221107T001213Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Посуда
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221114T083000Z
+DTEND:20221114T100000Z
+DTSTAMP:20230105T143622Z
+UID:64omapb46th3eb9m6li3cb9kc8qjgbb2cgr36bb475h36p1p6gpj8o9m6o@google.com
+CREATED:20221107T105825Z
+LAST-MODIFIED:20221107T105825Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Зубы
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221107T160000Z
+DTEND:20221107T163000Z
+DTSTAMP:20230105T143622Z
+UID:70ojccr374ojcb9lclim4b9kc5gm6bb1clgj2b9hcpj3ad1kc8s68p9hcc@google.com
+CREATED:20221104T181946Z
+DESCRIPTION:
+LAST-MODIFIED:20221108T001136Z
+LOCATION:
+SEQUENCE:6
+STATUS:CONFIRMED
+SUMMARY:Написать Федору
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221108T133000Z
+DTEND:20221108T143000Z
+DTSTAMP:20230105T143622Z
+UID:136ginc1dm9fbeoagg8rjpdeha@google.com
+CREATED:20221108T163447Z
+LAST-MODIFIED:20221108T163447Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Блины 
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221110T100000Z
+DTEND:20221110T101500Z
+DTSTAMP:20230105T143622Z
+UID:34un2jcq494jej72bu3cr2d99d@google.com
+CREATED:20221030T153715Z
+DESCRIPTION:
+LAST-MODIFIED:20221110T110810Z
+LOCATION:
+SEQUENCE:3
+STATUS:CONFIRMED
+SUMMARY:Запись к ЛОРу
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221110T110000Z
+DTEND:20221110T114500Z
+DTSTAMP:20230105T143622Z
+UID:cdhj6e1hcorm2b9kc8s3ab9kcgrm4b9o65im4b9m70pj0cho6kqj2ohn64@google.com
+CREATED:20221110T114623Z
+LAST-MODIFIED:20221110T114623Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Трекинг
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221112T011500Z
+DTEND:20221112T013000Z
+DTSTAMP:20230105T143622Z
+UID:coqj8dpic8sj4b9i71gjcb9k6ph38b9o6oqm4b9n60pjidr1cgr64pj16g@google.com
+CREATED:20221112T012644Z
+LAST-MODIFIED:20221112T012644Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:ВСУ возвращают Херсон
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230116T100000Z
+DTEND:20230116T141500Z
+DTSTAMP:20230105T143622Z
+UID:cgqm8cho6lj66bb3cgo3ib9kc9h36bb160sjab9i6sq38dpic4qm6p346s@google.com
+CREATED:20221109T130024Z
+DESCRIPTION:
+LAST-MODIFIED:20221112T022511Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Написать Федору
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221112T180000Z
+DTEND:20221112T190000Z
+DTSTAMP:20230105T143622Z
+UID:71j3ap9l60o3ib9k6crjib9kc9gjgb9o6cp36bb568q66o9ocor3apho6k@google.com
+CREATED:20221114T030259Z
+LAST-MODIFIED:20221114T030259Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Хот-доги
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;TZID=Europe/Moscow:20221127T113000
+DTEND;TZID=Europe/Moscow:20221127T210000
+RRULE:FREQ=MONTHLY;WKST=TU;BYMONTHDAY=27
+EXDATE;TZID=Europe/Moscow:20221127T113000
+EXDATE;TZID=Europe/Moscow:20221227T113000
+DTSTAMP:20230105T143622Z
+UID:cosjechgcgs3gbb16gq3ab9kclj6cbb2cph38bb164qj6ohhclijecj36o@google.com
+CREATED:20221116T014804Z
+LAST-MODIFIED:20221116T014804Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:День уборки\, совершенствования\, оптимизации и реформ всего
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221113T210000Z
+DTEND:20221113T224500Z
+DTSTAMP:20230105T143622Z
+UID:65j66c346kr3ab9n6cr3ab9k70s66b9o68pjab9nc9i34dj46hi32cr66g@google.com
+CREATED:20221116T014936Z
+LAST-MODIFIED:20221116T014936Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221113T230000Z
+DTEND:20221114T000000Z
+DTSTAMP:20230105T143622Z
+UID:60pmcpho70q38b9m6hh68b9kc4qm2b9oc4o66bb265gjaoj268oj8c1p6s@google.com
+CREATED:20221116T014936Z
+LAST-MODIFIED:20221116T014936Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221116T000000Z
+DTEND:20221116T023000Z
+DTSTAMP:20230105T143622Z
+UID:6hij2d9ockrmab9jclhj4b9k6lijcbb1ckp3eb9o6os36p1pc8rm4d1p6k@google.com
+CREATED:20221116T030844Z
+LAST-MODIFIED:20221116T030844Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Уборка\, посуда\, совершенствования
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221121T233000Z
+DTEND:20221122T003000Z
+DTSTAMP:20230105T143622Z
+UID:2b91fo9tgemtosbktifslmqu6e@google.com
+CREATED:20221122T024941Z
+LAST-MODIFIED:20221122T024941Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221125T024500Z
+DTEND:20221125T030000Z
+DTSTAMP:20230105T143622Z
+UID:60qjie9ic4o3eb9ncop34b9k75h68b9pccpm8b9m6opj4p35ckpjcp9nck@google.com
+CREATED:20221125T024640Z
+LAST-MODIFIED:20221125T024640Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Заказать чехол на телефон
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221125T033000Z
+DTEND:20221125T040000Z
+DTSTAMP:20230105T143622Z
+UID:2ln1tpp7u5b9ttak1vvf2po9nu@google.com
+CREATED:20221125T033227Z
+LAST-MODIFIED:20221125T033227Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Записаться в Deli
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221126T080000Z
+DTEND:20221126T083000Z
+DTSTAMP:20230105T143622Z
+UID:6lhj0e9o65ij0bb56dhj6b9k6gqj8bb26dgmcb9ocksm4c9l74qj4p9kc8@google.com
+CREATED:20221126T064235Z
+DESCRIPTION:
+LAST-MODIFIED:20221126T081952Z
+LOCATION:
+SEQUENCE:1
+STATUS:CONFIRMED
+SUMMARY:Забрать чехол
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221121T213000Z
+DTEND:20221121T233000Z
+DTSTAMP:20230105T143622Z
+UID:2t9khklhvfb9kfrp9n15afipdg@google.com
+CREATED:20221122T024931Z
+DESCRIPTION:
+LAST-MODIFIED:20221128T050554Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Cоломоны
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221203T040000Z
+DTEND:20221203T054500Z
+DTSTAMP:20230105T143622Z
+UID:432amjvmivucsp8q1tsdblqvh4@google.com
+CREATED:20221203T062447Z
+LAST-MODIFIED:20221203T062447Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Фунчоза с курицей
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221204T073000Z
+DTEND:20221204T083000Z
+DTSTAMP:20230105T143622Z
+UID:26t55hdu897trb2hv5jsrvlv1g@google.com
+CREATED:20221204T084533Z
+LAST-MODIFIED:20221204T084533Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Забрать массажер\, купить стейк
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221205T150000Z
+DTEND:20221205T153000Z
+DTSTAMP:20230105T143622Z
+UID:6dj36p1p75h34b9j6koj8b9k68sjcbb161gjgb9i6kq36pb36gsm8p9h60@google.com
+CREATED:20221206T180617Z
+LAST-MODIFIED:20221206T180617Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Забрать массажную подушку
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230112T160000Z
+DTEND:20230112T190000Z
+DTSTAMP:20230105T143622Z
+UID:ckr6co9hchgmab9lccrm8b9k75hj0bb161h6abb170p6achn65h68p9n6c@google.com
+CREATED:20221207T125652Z
+LAST-MODIFIED:20221207T125652Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Фотографирование
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221208T153000Z
+DTEND:20221208T163000Z
+DTSTAMP:20230105T143622Z
+UID:71h6acj470sj0b9k6kqj2b9kchj3eb9o68qj2bb5ccrm6c316gpm6e36ck@google.com
+CREATED:20221208T154308Z
+DESCRIPTION:
+LAST-MODIFIED:20221209T061727Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Замена струн на гитаре
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20220119
+DTEND;VALUE=DATE:20220121
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9th1nsijppdgm07u0f5dfc704ficl6rvppgktuneg7ld537qt1f33g
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20220119T142534Z
+DESCRIPTION:TakeRoom Morskaya\n39 Morskaya Naberezhnaya\, Vasileostrovskiy\
+ , Санкт-Петербург\, 199397\, Россия\n+7 981 900-07-55\n\nCheck-in: 19 янв 2
+ 022 14:00\nCheck-out: 20 янв 2022 12:00\n
+LAST-MODIFIED:20221209T064919Z
+LOCATION:39 Morskaya Naberezhnaya\, Vasileostrovskiy\, Санкт-Петербург\, 19
+ 9397\, Россия
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at TakeRoom Morskaya
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20211031
+DTEND;VALUE=DATE:20211102
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9t501lpt8dpa9s5lo29pt040tf9s1g2f2othr1h20oadfnof4ubt00
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20211031T213219Z
+DESCRIPTION:Номера на Гончарной\nСанкт-Петербург\n+7 812 400-35-00\n\nCheck
+ -in: 31 окт 2021 00:00\nCheck-out: 1 нояб 2021 00:00\n
+LAST-MODIFIED:20221209T064920Z
+LOCATION:Номера на Гончарной\, Санкт-Петербург
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Номера на Гончарной
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20211231
+DTEND;VALUE=DATE:20220103
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9t0ahk712gcfj8mfso4go7o0qo2majvoet1a831trrbj4aalecatag
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20211212T183937Z
+DESCRIPTION:Видовые Апартаменты Loft в Коломягах\nSaint Petersburg\n+7 960 
+ 257-20-07\n\nCheck-in: 31 дек 2021 14:00\nCheck-out: 2 янв 2022 12:00\n
+LAST-MODIFIED:20221209T064922Z
+LOCATION:Видовые Апартаменты Loft в Коломягах\, Saint Petersburg
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Видовые Апартаменты Loft в Коломягах
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20191027T155400Z
+DTEND:20191028T020100Z
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=Tutu.ru:mailto:info@tutu.ru
+UID:event-ebe2bb51c7e2c678b7b19746d4cb60d8
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20191023T085507Z
+DESCRIPTION:Отправление в 18:54 (моск. время)\, прибытие в 05:01 (моск. вре
+ мя).\nСправки по телефону .
+LAST-MODIFIED:20221209T064923Z
+LOCATION:Санкт-Петербург\, Московский вокзал
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поезд 287А\, Санкт-Петербург\, Московский вокзал - Москва\, Ленингр
+ адский вокзал
+TRANSP:OPAQUE
+ATTACH;FILENAME=blank_77546952847064.pdf:?view=att&th=16df7d4a0269306a&atti
+ d=0.2&disp=attd&zw
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20211120
+DTEND;VALUE=DATE:20211122
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9t7sqncnf7s39dv2lftvsrtf68kntl57hntfr7ev3n1gs5drsuq6j0
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20211120T181508Z
+DESCRIPTION:Демократ\nСанкт-Петербург\n+7 800 333-47-32\n\nCheck-in: 20 ноя
+ б 2021 00:00\nCheck-out: 21 нояб 2021 00:00\n
+LAST-MODIFIED:20221209T064926Z
+LOCATION:Демократ\, Санкт-Петербург
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Демократ
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20210617
+DTEND;VALUE=DATE:20210619
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9tcoupirmlcju76nog5c2301c02k0jkdmhntsm2al5q866secnee9g
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20210617T113750Z
+DESCRIPTION:Отель Охтинская\nСанкт-Петербург\n+7 812 318-00-40\n\nCheck-in:
+  17 июн 2021 2:00PM\nCheck-out: 18 июн 2021 12:00PM\n
+LAST-MODIFIED:20221209T064927Z
+LOCATION:Отель Охтинская\, Санкт-Петербург
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Отель Охтинская
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART;VALUE=DATE:20211215
+DTEND;VALUE=DATE:20211217
+DTSTAMP:20230105T143622Z
+ORGANIZER;CN=unknownorganizer@calendar.google.com:mailto:unknownorganizer@c
+ alendar.google.com
+UID:7kukuqrfedlm2f9t2bfgt3oqqako4uah0h5tinjom4rt9j7364ins21fg415b6j6ik4g
+ATTENDEE;CUTYPE=INDIVIDUAL;ROLE=REQ-PARTICIPANT;PARTSTAT=ACCEPTED;CN=ae.eau
+ .e@gmail.com;X-NUM-GUESTS=0:mailto:ae.eau.e@gmail.com
+CLASS:PRIVATE
+CREATED:20211215T212849Z
+DESCRIPTION:Демократ\nСанкт-Петербург\n+7 800 333-47-32\n\nCheck-in: 15 дек
+  2021 00:00\nCheck-out: 16 дек 2021 00:00\n
+LAST-MODIFIED:20221209T064928Z
+LOCATION:Демократ на Некрасова 58\, Санкт-Петербург
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Stay at Демократ
+TRANSP:TRANSPARENT
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:This is an event reminder
+TRIGGER:-P0DT0H30M0S
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221210T220000Z
+DTEND:20221210T233000Z
+DTSTAMP:20230105T143622Z
+UID:cosjadhk6limcb9pckp3cb9k64o3eb9o61ij8b9n71j3ec32cdhjedhk64@google.com
+CREATED:20221211T094938Z
+LAST-MODIFIED:20221211T094938Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Гуляш\, кукурузные макароны
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221214T210000Z
+DTEND:20221214T223000Z
+DTSTAMP:20230105T143622Z
+UID:13bjel7b6ld68uqm9oekqoo2u0@google.com
+CREATED:20221215T130414Z
+DESCRIPTION:
+LAST-MODIFIED:20221215T130417Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Куриный суп
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221214T223000Z
+DTEND:20221214T230000Z
+DTSTAMP:20230105T143622Z
+UID:2r3r8rguo3bn7t1t92bu614rb4@google.com
+CREATED:20221215T130424Z
+LAST-MODIFIED:20221215T130424Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221215T133000Z
+DTEND:20221215T180000Z
+DTSTAMP:20230105T143622Z
+UID:1gi28vq8s6i4alr575t0ngqbli@google.com
+CREATED:20221215T202145Z
+LAST-MODIFIED:20221215T202145Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Поиск квартиры на НГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221216T120000Z
+DTEND:20221216T123000Z
+DTSTAMP:20230105T143622Z
+UID:6hj6ap1jckpj8bb66oqj8b9k61hmabb1c8qjgb9k6li36oplcgrm6chjck@google.com
+CREATED:20221215T175845Z
+DESCRIPTION:
+LAST-MODIFIED:20221223T012046Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Просмотр квартира на НГ
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221223T010000Z
+DTEND:20221223T013000Z
+DTSTAMP:20230105T143622Z
+UID:4h3kifql57bercq8qk7rm0amvn@google.com
+CREATED:20221223T013043Z
+DESCRIPTION:
+LAST-MODIFIED:20221223T013045Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Календарь
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221223T020000Z
+DTEND:20221223T030000Z
+DTSTAMP:20230105T143622Z
+UID:6gsj4o9ocgs6cb9jc4r6cb9k75j3cb9p60rm8b9i6ssjedpmc5im6cr1co@google.com
+CREATED:20221223T025044Z
+DESCRIPTION:
+LAST-MODIFIED:20221223T025044Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Блог | Пост
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221227T140000Z
+DTEND:20221227T160000Z
+DTSTAMP:20230105T143622Z
+UID:c5gjad9kc9i30b9l69hmab9kckom8bb1cpijcbb260r38p1o60rj0db560@google.com
+CREATED:20221228T064344Z
+DESCRIPTION:
+LAST-MODIFIED:20221228T064344Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Макароны с сосисками
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221227T160000Z
+DTEND:20221227T170000Z
+DTSTAMP:20230105T143622Z
+UID:6lij8ohn6grmcb9jc5h3eb9kcorm4bb1cdi3eb9g6com6chg60sj8c9lco@google.com
+CREATED:20221228T064404Z
+DESCRIPTION:
+LAST-MODIFIED:20221228T064404Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221231T000000Z
+DTEND:20221231T021500Z
+DTSTAMP:20230105T143622Z
+UID:6grj8p9ic4omcb9ic4r3eb9k68o38bb2c4pjeb9m6dh36o9p6cqj0pj260@google.com
+CREATED:20221231T024726Z
+DESCRIPTION:
+LAST-MODIFIED:20221231T024726Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Куриные крылышки
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221230T210000Z
+DTEND:20221230T230000Z
+DTSTAMP:20230105T143622Z
+UID:6ksmac1pc8s36bb46li6cb9k6krmcb9o64o30b9lcgojcd9hcgpjgp3660@google.com
+CREATED:20221231T024941Z
+DESCRIPTION:
+LAST-MODIFIED:20221231T024941Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | Запеченые овощи
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20221231T031500Z
+DTEND:20221231T044500Z
+DTSTAMP:20230105T143622Z
+UID:cgsjiopnc9hjabb365ij2b9k61i30b9o6hi3gbb16pgj2dhlccqm8dj2ck@google.com
+CREATED:20221231T044402Z
+DESCRIPTION:
+LAST-MODIFIED:20221231T044402Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Жмурки
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230103T220000Z
+DTEND:20230103T234500Z
+DTSTAMP:20230105T143622Z
+UID:74rm4db171hmcb9mcor66b9k6os32bb271i3gbb6cgq3ic9lc5i34cj1c8@google.com
+CREATED:20230104T004229Z
+DESCRIPTION:
+LAST-MODIFIED:20230104T004229Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Готовка | суп\, макароны с сыром
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230103T234500Z
+DTEND:20230104T004500Z
+DTSTAMP:20230105T143622Z
+UID:71ij4cphccoj2b9ncksm6b9k6or32bb2clijeb9pcgs36c9j64sjcp1icc@google.com
+CREATED:20230104T004251Z
+DESCRIPTION:
+LAST-MODIFIED:20230104T004251Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Мытье посуды
+TRANSP:OPAQUE
+END:VEVENT
+BEGIN:VEVENT
+DTSTART:20230104T110000Z
+DTEND:20230104T113000Z
+DTSTAMP:20230105T143622Z
+UID:1bm5lkqhl89jcmkkjv1h3hjbnn@google.com
+CREATED:20230104T115901Z
+DESCRIPTION:
+LAST-MODIFIED:20230104T115901Z
+LOCATION:
+SEQUENCE:0
+STATUS:CONFIRMED
+SUMMARY:Покупка клавиатуры
+TRANSP:OPAQUE
+END:VEVENT
+END:VCALENDAR
