@@ -14,6 +14,8 @@ from googleapiclient.errors import HttpError
 import pandas as pd
 
 import streamlit as st
+
+
 # import matplotlib.pyplot as plt
 
 
@@ -107,6 +109,13 @@ service = build('calendar', 'v3', credentials=creds)
 
 
 def get_time_table(time_min, time_max):
+    print()
+    print("------------------")
+    print("GETTING TIME TABLE")
+    print("------------------")
+    # Printing progress bar
+    # i = 0
+
     # Converting time to needed format
     # Adding time to date from streamlit
     time_min = datetime.combine(time_min, datetime.min.time())
@@ -115,8 +124,8 @@ def get_time_table(time_min, time_max):
     # Calculating total seconds in this range
     total_delta = time_max - time_min
     total_date_range_seconds = total_delta.total_seconds()
-    print('TOTAL total_date_range_seconds')
-    print(total_date_range_seconds)
+    # print('TOTAL total_date_range_seconds')
+    # print(total_date_range_seconds)
 
     # Converting to isoformat (string)
     time_min = datetime.isoformat(time_min) + '+03:00'
@@ -127,6 +136,9 @@ def get_time_table(time_min, time_max):
     # pprint(calendar_list_result)
     calendar_list = calendar_list_result.get('items', [])
     # pprint(calendar_list)
+    # print()
+    # print("Calendar[0]: ")
+    # pprint(calendar_list[0])
 
     # pandas table
     table = []
@@ -134,16 +146,30 @@ def get_time_table(time_min, time_max):
     for calendar in calendar_list:
 
         calendar_name = calendar.get('summary')
+        calendar_color = calendar.get('backgroundColor')
 
         id_ = calendar.get('id')
         # print(calendar_name, id_)
 
         # print('EVENTS:')
         events_ = get_calendar_events(id_, time_min, time_max)
+
+        # print()
+        # print("Events[0]: ")
+        # print(type(events_))
+        # if len(events_) > 0:
+        #     pprint(events_[0])
+
         for event_ in events_:
+            # Printing progress bar
+            # i += 1
+            # if i % 100 == 0:
+            #     print('processed event ', i)
+
             row = dict()
             row['Calendar'] = calendar_name
-            pprint(event_)
+            row['Calendar color'] = calendar_color
+            # pprint(event_)
             # print(event_['summary'])
             # if event_['summary'] is None:
             #     event_name = '-'
@@ -155,14 +181,16 @@ def get_time_table(time_min, time_max):
             # pprint(event_)
             # print(type(row['Duration']))
             row['Duration seconds'] = duration_to_seconds(row['Duration'])
+            # row['Start time'] = get_event_start_time(event_)
+            # row['End time'] = get_event_start_time(event_)
 
             table.append(row)
 
     df = pd.DataFrame(table)
 
     total_event_seconds = df['Duration seconds'].sum()
-    print()
-    print('total_event_seconds: ', total_event_seconds)
+    # print()
+    # print('total_event_seconds: ', total_event_seconds)
     unfilled_event_seconds = total_date_range_seconds - total_event_seconds
     # TOD correct unfilled_event_seconds, events can intersect!
 
@@ -174,21 +202,24 @@ def get_time_table(time_min, time_max):
 
     df = df.append(row, ignore_index=True)
 
+    # with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+    print()
+    print("Raw data frame: ")
     print(df)
-    with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-        print(df)
 
     return df
 
 
 def get_groped_calendars(df):
-    df_grouped_calendars = df.loc[:, ['Calendar', 'Duration seconds']]
-    df_grouped_calendars = df_grouped_calendars.groupby('Calendar').sum()
+    df_grouped_calendars = df.loc[:, ['Calendar', 'Duration seconds', 'Calendar color']]
+    df_grouped_calendars = df_grouped_calendars.groupby('Calendar').agg(
+        {'Duration seconds': 'sum', 'Calendar color': 'first'})
     df_grouped_calendars = df_grouped_calendars.reset_index()
 
-    print('Calendars')
-    with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-        print(df_grouped_calendars)
+    # with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
+    print()
+    print('Grouped calendars')
+    print(df_grouped_calendars)
 
     return df_grouped_calendars
 
@@ -209,4 +240,3 @@ def get_calendar_events_table(df, calendar_name):
     df_calendar_events = df.loc[df['Calendar'] == calendar_name]
     df_calendar_events = df_calendar_events.loc[:, ['Event', 'Duration']]
     return df_calendar_events
-

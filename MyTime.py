@@ -20,14 +20,18 @@ if st.button('Create calendars pie 🥧'):
 
     # Calendars
     calendar_names = df_grouped_calendars['Calendar'].tolist()
-    st.session_state['calendar_names'] = calendar_names
+    calendar_colors = df_grouped_calendars['Calendar color'].tolist()
     calendar_durations = df_grouped_calendars['Duration seconds'].tolist()
+    st.session_state['calendar_names'] = calendar_names
+    st.session_state['calendar_colors'] = calendar_colors
+
 
     # Calendars chart
     fig1, ax1 = plt.subplots()
     ax1.pie(calendar_durations, labels=calendar_names, autopct='%1.1f%%',
             shadow=False, startangle=90)
     ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+    ax1.legend(bbox_to_anchor=(1.1, 1.05))
 
     # st.header("from " + str(time_min) + " to " + str(time_max))
     # st.pyplot(fig1)
