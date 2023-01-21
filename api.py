@@ -16,7 +16,7 @@ import pandas as pd
 import streamlit as st
 
 
-# import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
 
 
 #######################################################################################################################
@@ -81,6 +81,9 @@ def duration_to_seconds(duration):
 # Authorization
 #######################################################################################################################
 
+
+# Example from quickstart
+#
 # If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
@@ -101,13 +104,31 @@ if not creds or not creds.valid:
     # Save the credentials for the next run
     with open('token.json', 'w') as token:
         token.write(creds.to_json())
+#
+
+# Trying to do my aouthorization
+
+# if 'token' in st.session_state:
+#     st.session_state['creds'] = Credentials.from_authorized_user_file(st.session_state['token'], SCOPES)
+#     creds = st.session_state['creds']
+# # If there are no (valid) credentials available, let the user log in.
+# if not creds or not creds.valid:
+#     if creds and creds.expired and creds.refresh_token:
+#         creds.refresh(Request())
+#     else:
+#         flow = InstalledAppFlow.from_client_secrets_file(
+#             'credentials.json', SCOPES)
+#         creds = flow.run_local_server(port=0)
+#     # Save the credentials for the next run
+#     st.session_state['token'] = creds.to_json()
+#
+
+service = build('calendar', 'v3', credentials=creds)
+
 
 #######################################################################################################################
 # Application
 #######################################################################################################################
-service = build('calendar', 'v3', credentials=creds)
-
-
 def get_time_table(time_min, time_max):
     print()
     print("------------------")
@@ -181,8 +202,8 @@ def get_time_table(time_min, time_max):
             # pprint(event_)
             # print(type(row['Duration']))
             row['Duration seconds'] = duration_to_seconds(row['Duration'])
-            # row['Start time'] = get_event_start_time(event_)
-            # row['End time'] = get_event_start_time(event_)
+            row['Start time'] = get_event_start_time(event_)
+            row['End time'] = get_event_start_time(event_)
 
             table.append(row)
 
@@ -240,3 +261,36 @@ def get_calendar_events_table(df, calendar_name):
     df_calendar_events = df.loc[df['Calendar'] == calendar_name]
     df_calendar_events = df_calendar_events.loc[:, ['Event', 'Duration']]
     return df_calendar_events
+
+
+def get_calendars_table_by_days(raw_timetable_df):
+    table_by_days = raw_timetable_df.loc[:, ['Calendar', 'Duration seconds', 'Start time', 'End time']]
+
+    # deleting odd calendars
+    table_by_days.drop(table_by_days[table_by_days['Start time'] == 0].index, inplace=True)
+    table_by_days.drop(table_by_days[table_by_days['Start time'] == 0.0].index, inplace=True)
+    table_by_days.drop(table_by_days[table_by_days['Calendar'] == 'Unfilled'].index, inplace=True)
+
+    table_by_days['Start date'] = table_by_days.apply(lambda x: x['Start time'].date(), axis=1)
+    table_by_days['Week'] = table_by_days.apply(lambda x: x['Start time'].isocalendar().week, axis=1)
+
+    table_by_days = table_by_days.loc[:, ['Calendar', 'Duration seconds', 'Start date']]
+    print(table_by_days)
+
+    table_by_days = table_by_days.groupby(['Calendar', 'Start date']).sum()
+
+    return table_by_days
+
+
+def create_days_plot(table_by_days):
+    table_by_days = table_by_days.loc['Статья', :]
+    table_by_days = table_by_days.reset_index()
+    print(table_by_days)
+
+    x = table_by_days.loc[:, ['Start date']]
+    y = table_by_days.loc[:, ['Duration seconds']]
+
+    # plot_ = plt.plot(x, y)
+    # plt.show()
+
+    return table_by_days

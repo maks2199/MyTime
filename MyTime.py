@@ -1,3 +1,12 @@
+import os
+
+import streamlit_google_oauth as oauth
+from dotenv import load_dotenv
+from google.auth.transport.requests import Request
+from google.oauth2.credentials import Credentials
+from google_auth_oauthlib.flow import InstalledAppFlow
+from googleapiclient.discovery import build
+
 import api
 
 import pandas as pd
@@ -5,6 +14,56 @@ import streamlit as st
 import matplotlib.pyplot as plt
 from datetime import datetime
 
+######################################################################################################################
+# Authorization
+######################################################################################################################
+# load_dotenv()
+# client_id = '564171152911-3f6baosrv1eg82qk8itf9rldk8o0i605.apps.googleusercontent.com'
+# client_secret = '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'
+# redirect_uri = 'http://localhost:8501'
+#
+# login_info = oauth.login(
+#         client_id=client_id,
+#         client_secret=client_secret,
+#         redirect_uri=redirect_uri,
+#         login_button_text="Continue with Google",
+#         logout_button_text="Logout",
+#     )
+#
+# if login_info:
+#         user_id, user_email = login_info
+#         st.write(f"Welcome {user_email}")
+# else:
+#         st.write("Please login")
+#
+#
+#
+# Example from quickstart
+#
+# If modifying these scopes, delete the file token.json.
+# SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
+#
+# creds = None
+# # The file token.json stores the user's access and refresh tokens, and is
+# # created automatically when the authorization flow completes for the first
+# # time.
+#
+# if 'token' in st.session_state:
+#     st.session_state['creds'] = Credentials.from_authorized_user_file('token.json', SCOPES)
+#     creds = st.session_state['creds']
+# # If there are no (valid) credentials available, let the user log in.
+# if not creds or not creds.valid:
+#     if creds and creds.expired and creds.refresh_token:
+#         creds.refresh(Request())
+#     else:
+#         flow = InstalledAppFlow.from_client_secrets_file(
+#             'credentials.json', SCOPES)
+#         creds = flow.run_local_server(port=0)
+#     # Save the credentials for the next run
+#     st.session_state['token'] = creds.to_json()
+#
+# service = build('calendar', 'v3', credentials=creds)
+######################################################################################################################
 st.title('MyTime')
 
 time_min = st.date_input("from")
@@ -104,3 +163,24 @@ st.session_state['fig2'] = fig2
 
 st.pyplot(st.session_state['fig2'])
 
+##################################
+# Graphs
+##################################
+table_by_days = api.get_calendars_table_by_days(df)
+print("\n Table by days: \n", table_by_days)
+for col in table_by_days.columns:
+    print(col)
+# table_by_days = api.create_days_plot(api.get_calendars_table_by_days(df))
+#
+# st.write(table_by_days)
+# x = table_by_days.loc[:, ['Start date']]
+# y = table_by_days.loc[:, ['Duration seconds']]
+#
+# fig = plt.figure()
+# ax = plt.axes()
+#
+# ax.plot(x, y)
+#
+# st.pyplot(fig)
+
+# st.line_chart(table_by_days, x='Start date', y='Duration seconds')
