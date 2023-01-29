@@ -1,7 +1,9 @@
 import os
+from pprint import pprint
 
-import streamlit_google_oauth as oauth
-from dotenv import load_dotenv
+import pandas
+# import streamlit_google_oauth as oauth
+# from dotenv import load_dotenv
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
@@ -13,6 +15,10 @@ import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
 from datetime import datetime
+
+# import matplotlib.pyplot as plt
+# import mpl_toolkits
+# from mpl_toolkits.mplot3d import Axes3D
 
 ######################################################################################################################
 # Authorization
@@ -84,7 +90,6 @@ if st.button('Create calendars pie 🥧'):
     st.session_state['calendar_names'] = calendar_names
     st.session_state['calendar_colors'] = calendar_colors
 
-
     # Calendars chart
     fig1, ax1 = plt.subplots()
     ax1.pie(calendar_durations, labels=calendar_names, autopct='%1.1f%%',
@@ -124,7 +129,6 @@ if st.button('Create calendars pie 🥧'):
 else:
     st.write('Choose options and press the button to create chart')
 
-
 # Calendars chart
 st.header("from " + str(time_min) + " to " + str(time_max))
 st.pyplot(st.session_state['fig1'])
@@ -159,8 +163,6 @@ ax2.pie(selected_event_durations, labels=selected_event_names, autopct='%1.1f%%'
 ax2.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 st.session_state['fig2'] = fig2
 
-
-
 st.pyplot(st.session_state['fig2'])
 
 ##################################
@@ -172,9 +174,42 @@ for col in table_by_days.columns:
     print(col)
 # table_by_days = api.create_days_plot(api.get_calendars_table_by_days(df))
 #
-# st.write(table_by_days)
-# x = table_by_days.loc[:, ['Start date']]
-# y = table_by_days.loc[:, ['Duration seconds']]
+st.write(table_by_days)
+
+one_calendar = table_by_days.loc[table_by_days['Calendar'] == '22_Диплом', :]
+print(one_calendar)
+
+calendar_names = table_by_days['Calendar'].unique()
+print(calendar_names)
+
+
+calendar_dates = table_by_days['Start date'].unique()
+calendar_dates.sort()
+plot_df = pd.DataFrame(calendar_dates)
+plot_df['Start date'] = calendar_dates
+plot_df = plot_df.set_index('Start date')
+print(plot_df)
+
+
+for calendar_name in calendar_names:
+    print('table by days tyope', type(table_by_days))
+    calendar_table = table_by_days.loc[table_by_days['Calendar'] == calendar_name, :]
+    calendar_table = calendar_table.set_index('Start date')
+    calendar_table = calendar_table.loc[:, ['Duration seconds']]
+    calendar_table = calendar_table.rename(columns={'Duration seconds': calendar_name})
+    print(calendar_table)
+    print(type(calendar_table))
+    calendar_column_lst = calendar_table.values.tolist()
+    print(calendar_column_lst)
+
+    plot_df[calendar_name] = calendar_table
+
+print(plot_df)
+
+x = plot_df.loc[:, [0]]
+y = plot_df.loc[:, ['Сон']]
+print(x)
+print(y)
 #
 # fig = plt.figure()
 # ax = plt.axes()
@@ -183,4 +218,10 @@ for col in table_by_days.columns:
 #
 # st.pyplot(fig)
 
-# st.line_chart(table_by_days, x='Start date', y='Duration seconds')
+
+plot_df = plot_df.drop(0, axis=1)
+plot_df = plot_df.fillna(0)
+
+
+print(plot_df)
+st.line_chart(plot_df)

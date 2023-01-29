@@ -277,7 +277,7 @@ def get_calendars_table_by_days(raw_timetable_df):
     table_by_days = table_by_days.loc[:, ['Calendar', 'Duration seconds', 'Start date']]
     print(table_by_days)
 
-    table_by_days = table_by_days.groupby(['Calendar', 'Start date']).sum()
+    table_by_days = table_by_days.groupby(['Calendar', 'Start date'], as_index=False).sum()
 
     return table_by_days
 
