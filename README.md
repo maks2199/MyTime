@@ -12,4 +12,4 @@ App for analyze your time spend from Google Calendar
 * executables.py -- script that works with raw .ics files  
 * main.py -- 
 * quickstart.py -- example from Google Calendar API
-* token.json -- information for authorization in Google 
+* token.json -- information for authorization in Google. Delete this, when expired

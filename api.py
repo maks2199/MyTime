@@ -12,8 +12,8 @@ from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
 
 import pandas as pd
-
 import streamlit as st
+from http import cookies
 
 
 import matplotlib.pyplot as plt
@@ -81,16 +81,9 @@ def duration_to_seconds(duration):
 # Authorization
 #######################################################################################################################
 
-
-# Example from quickstart
-#
-# If modifying these scopes, delete the file token.json.
 SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
 creds = None
-# The file token.json stores the user's access and refresh tokens, and is
-# created automatically when the authorization flow completes for the first
-# time.
 if os.path.exists('token.json'):
     creds = Credentials.from_authorized_user_file('token.json', SCOPES)
 # If there are no (valid) credentials available, let the user log in.
@@ -104,24 +97,6 @@ if not creds or not creds.valid:
     # Save the credentials for the next run
     with open('token.json', 'w') as token:
         token.write(creds.to_json())
-#
-
-# Trying to do my aouthorization
-
-# if 'token' in st.session_state:
-#     st.session_state['creds'] = Credentials.from_authorized_user_file(st.session_state['token'], SCOPES)
-#     creds = st.session_state['creds']
-# # If there are no (valid) credentials available, let the user log in.
-# if not creds or not creds.valid:
-#     if creds and creds.expired and creds.refresh_token:
-#         creds.refresh(Request())
-#     else:
-#         flow = InstalledAppFlow.from_client_secrets_file(
-#             'credentials.json', SCOPES)
-#         creds = flow.run_local_server(port=0)
-#     # Save the credentials for the next run
-#     st.session_state['token'] = creds.to_json()
-#
 
 service = build('calendar', 'v3', credentials=creds)
 
@@ -231,18 +206,7 @@ def get_time_table(time_min, time_max):
     return df
 
 
-def get_groped_calendars(df):
-    df_grouped_calendars = df.loc[:, ['Calendar', 'Duration seconds', 'Calendar color']]
-    df_grouped_calendars = df_grouped_calendars.groupby('Calendar').agg(
-        {'Duration seconds': 'sum', 'Calendar color': 'first'})
-    df_grouped_calendars = df_grouped_calendars.reset_index()
 
-    # with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
-    print()
-    print('Grouped calendars')
-    print(df_grouped_calendars)
-
-    return df_grouped_calendars
 
 
 def get_groped_events(df):
@@ -263,23 +227,7 @@ def get_calendar_events_table(df, calendar_name):
     return df_calendar_events
 
 
-def get_calendars_table_by_days(raw_timetable_df):
-    table_by_days = raw_timetable_df.loc[:, ['Calendar', 'Duration seconds', 'Start time', 'End time']]
 
-    # deleting odd calendars
-    table_by_days.drop(table_by_days[table_by_days['Start time'] == 0].index, inplace=True)
-    table_by_days.drop(table_by_days[table_by_days['Start time'] == 0.0].index, inplace=True)
-    table_by_days.drop(table_by_days[table_by_days['Calendar'] == 'Unfilled'].index, inplace=True)
-
-    table_by_days['Start date'] = table_by_days.apply(lambda x: x['Start time'].date(), axis=1)
-    table_by_days['Week'] = table_by_days.apply(lambda x: x['Start time'].isocalendar().week, axis=1)
-
-    table_by_days = table_by_days.loc[:, ['Calendar', 'Duration seconds', 'Start date']]
-    print(table_by_days)
-
-    table_by_days = table_by_days.groupby(['Calendar', 'Start date'], as_index=False).sum()
-
-    return table_by_days
 
 
 def create_days_plot(table_by_days):
