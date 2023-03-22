@@ -178,7 +178,7 @@ def get_time_table(time_min, time_max):
             # print(type(row['Duration']))
             row['Duration seconds'] = duration_to_seconds(row['Duration'])
             row['Start time'] = get_event_start_time(event_)
-            row['End time'] = get_event_start_time(event_)
+            row['End time'] = get_event_end_time(event_)
 
             table.append(row)
 
