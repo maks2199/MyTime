@@ -41,6 +41,8 @@ def get_pretty_calendars_table(df_main: pd.DataFrame, time_format) -> pd.DataFra
     # Percentage
     df_result['Percent'] = (df_result['Duration'] / df_result['Duration'].sum()) * 100
 
+    df_result.to_csv('df_result.csv')
+
     return df_result
 
 
@@ -66,6 +68,7 @@ def get_calendars_table_by_days(raw_timetable_df):
 
     return table_by_days
 
+
 def get_calendars_table_by_weeks(raw_timetable_df):
     table_by_days = raw_timetable_df.loc[:, ['Calendar', 'Duration seconds', 'Start time', 'End time']]
     # pd.set_option('display.max_rows', None)
@@ -87,6 +90,29 @@ def get_calendars_table_by_weeks(raw_timetable_df):
     table_by_days = table_by_days.groupby(['Calendar', 'Week'], as_index=False).sum()
 
     return table_by_days
+
+
+def get_calendar_events_table(df_main, calendar, time_format):
+    if time_format == 'Seconds':
+        k = 1
+    elif time_format == 'Minutes':
+        k = 60
+    elif time_format == 'Hours':
+        k = 3600
+
+    df_result = df_main.loc[df_main['Calendar'] == calendar, ['Event', 'Duration seconds']]
+    df_result = df_result.groupby('Event').agg(
+        {'Duration seconds': 'sum'})
+    df_result = df_result.reset_index()
+    df_result['Duration seconds'] = df_result['Duration seconds'].apply(lambda x: round((x / k) * 2) / 2)
+    df_result = df_result.rename(columns={'Duration seconds': 'Duration'})
+    df_result = df_result.set_index('Event')
+    df_result = df_result.sort_values(by=['Duration'], ascending=False)
+
+    # Percentage
+    df_result['Percent'] = (df_result['Duration'] / df_result['Duration'].sum()) * 100
+
+    return df_result
 
 
 # ---------------------------------------------------------------------------------------------------------------------
@@ -177,7 +203,8 @@ def create_altair_bar_char_calendars(raw_timetable_df):
 
 def create_correlation_matrix(raw_timetable_df):
     correlation_table = get_calendars_table_by_days(raw_timetable_df)
-    correlation_table = correlation_table.drop(correlation_table[correlation_table['Calendar'] == '_Timetable'].index, inplace=False)
+    correlation_table = correlation_table.drop(correlation_table[correlation_table['Calendar'] == '_Timetable'].index,
+                                               inplace=False)
     correlation_table = correlation_table.sort_values(by=['End date'])
     correlation_table = correlation_table.pivot(index='End date', columns='Calendar')
     correlation_table = correlation_table.fillna(0)

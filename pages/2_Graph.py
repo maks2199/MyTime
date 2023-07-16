@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 
 import visualizer
-from MyTime import side_bar_time
+from MyTime import side_bar_time, from_to_header
 
 side_bar_time()
 
@@ -15,7 +15,7 @@ else:
     df_main = st.session_state['df_main']
 
     st.header('Summary graph')
-    st.subheader('From ' + str(st.session_state['time_min']) + ' To ' + str(st.session_state['time_max']))
+    from_to_header(st.session_state['time_min'], st.session_state['time_max'])
 
     table_by_days = visualizer.get_calendars_table_by_days(df_main)
 
@@ -29,6 +29,7 @@ else:
     plot_df['End date'] = calendar_dates
     plot_df = plot_df.set_index('End date')
 
+
     for calendar_name in calendar_names:
         calendar_table = table_by_days.loc[table_by_days['Calendar'] == calendar_name, :]
         calendar_table = calendar_table.set_index('End date')
@@ -39,8 +40,8 @@ else:
 
         plot_df[calendar_name] = calendar_table
 
-    x = plot_df.loc[:, [0]]
-    y = plot_df.loc[:, ['Сон']]
+    # x = plot_df.loc[:, [0]]
+    # y = plot_df.loc[:, ['Сон']]
 
     plot_df = plot_df.drop(0, axis=1)
     plot_df = plot_df.fillna(0)

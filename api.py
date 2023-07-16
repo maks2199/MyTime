@@ -5,11 +5,14 @@ from datetime import datetime
 import os.path
 from pprint import pprint
 
+
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from googleapiclient.discovery import build
 from googleapiclient.errors import HttpError
+from google.oauth2 import id_token
+from google.auth.transport import requests
 
 import pandas as pd
 import streamlit as st
@@ -22,6 +25,31 @@ import matplotlib.pyplot as plt
 #######################################################################################################################
 # Functions
 #######################################################################################################################
+
+
+# def get_google_id_token(auth_code, client_id):
+#     try:
+#         token_ = id_token.fetch_id_token(requests.Request(), auth_code, client_id)
+#         return token_
+#     except ValueError as e:
+#         st.error(f"Error retrieving ID token: {e}")
+#
+# import streamlit.ReportThread as ReportThread
+# from streamlit.web.server import Server
+# # Handle OAuth2 callback route
+# AUTHORIZATION_CODE = "code"
+# REDIRECT_URI = "http://localhost:8501/"  # Replace with your redirect URI
+#
+# if st._is_running_with_streamlit:
+#     ctx = ReportThread.get_report_ctx()
+#     session_id = ctx.session_id
+#     session_info = Server.get_current()._session_info_by_id[session_id]
+#
+#     if session_info.ws.request_info.request_line == "GET /":
+#         auth_code = session_info.ws.request_info.query_params[AUTHORIZATION_CODE]
+#         get_google_id_token(auth_code, "564171152911-3f6baosrv1eg82qk8itf9rldk8o0i605.apps.googleusercontent.com")  # Replace with your actual client ID
+#         # Continue with the rest of your app's logic
+
 def get_ten_upcoming_events(calendar_id):
     # Call the Calendar API
     now = datetime.utcnow().isoformat() + 'Z'  # 'Z' indicates UTC time
@@ -203,10 +231,15 @@ def get_time_table(time_min, time_max):
     print("Raw data frame: ")
     print(df)
 
+    df.to_csv('raw_time.csv')
+
     return df
 
 
-
+def get_calendars_list():
+    calendar_list_result = service.calendarList().list().execute()
+    calendar_list = calendar_list_result.get('items', [])
+    return calendar_list
 
 
 def get_groped_events(df):
