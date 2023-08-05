@@ -78,7 +78,10 @@ authorization_url = asyncio.run(
                             redirect_uri=redirect_uri)
 )
 
-
+st.write(f'''<h1>
+            Please login using this <a target="_self"
+            href="{authorization_url}">url</a></h1>''',
+                 unsafe_allow_html=True)
 
 if 'code' not in st.experimental_get_query_params():
     st.write('Authorization is needed')
@@ -99,10 +102,7 @@ else:
     # SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
     if 'token' not in st.session_state:
-        st.write(f'''<h1>
-            Please login using this <a target="_self"
-            href="{authorization_url}">url</a></h1>''',
-                 unsafe_allow_html=True)
+        ...
     else:
         creds = Credentials(token=st.session_state['token']['access_token'])
         service = build('calendar', 'v3', credentials=creds)
