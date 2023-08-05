@@ -21,27 +21,6 @@ import visualizer
 from pages import page_result, page_pie_chart
 
 st.set_page_config(layout="wide")
-# --------------------------------------------------------------------------------------------------------------------
-# AUTHORIZATION
-
-# if st.button("Sign in with Google"):
-#     # Redirect the user to the Google Sign-In page
-#     auth_url = "https://accounts.google.com/o/oauth2/auth"
-#     client_id = "564171152911-3f6baosrv1eg82qk8itf9rldk8o0i605.apps.googleusercontent.com"  # Replace with your actual client ID
-#     redirect_uri = "http://localhost:8501"  # Replace with your redirect URI
-#     scope = "https://www.googleapis.com/auth/calendar.readonly"  # Replace with the desired scopes
-#     state = "12345"  # Replace with a unique state value
-#     auth_endpoint = f"{auth_url}?response_type=code&client_id={client_id}&redirect_uri={redirect_uri}&scope={scope}&state={state}"
-#     st.markdown(f'<a href="{auth_endpoint}">Click here to sign in with Google</a>', unsafe_allow_html=True)
-
-# client_id = os.environ['GOOGLE_CLIENT_ID']
-# client_secret = os.environ['GOOGLE_CLIENT_SECRET']
-# redirect_uri = os.environ['REDIRECT_URI']
-client_id = '564171152911-3f6baosrv1eg82qk8itf9rldk8o0i605.apps.googleusercontent.com'
-client_secret = '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'
-redirect_uri = 'http://localhost:8501'
-
-client = GoogleOAuth2(client_id, client_secret)
 
 
 async def write_authorization_url(client,
@@ -54,19 +33,6 @@ async def write_authorization_url(client,
     return authorization_url
 
 
-authorization_url = asyncio.run(
-    write_authorization_url(client=client,
-                            redirect_uri=redirect_uri)
-)
-
-st.write(f'''<h1>
-    Please login using this <a target="_self"
-    href="{authorization_url}">url</a></h1>''',
-         unsafe_allow_html=True)
-
-code = st.experimental_get_query_params()['code']
-
-
 async def write_access_token(client,
                              redirect_uri,
                              code):
@@ -74,43 +40,6 @@ async def write_access_token(client,
     return token
 
 
-if 'token' not in st.session_state:
-    token = asyncio.run(
-        write_access_token(client=client,
-                           redirect_uri=redirect_uri,
-                           code=code))
-    token['scope'] = 'https://www.googleapis.com/auth/calendar.readonly'
-    st.session_state['token'] = token
-    print('token:')
-    print(token)
-
-
-# SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
-
-if 'token' in st.session_state:
-    creds = Credentials(token=st.session_state['token']['access_token'])
-    service = build('calendar', 'v3', credentials=creds)
-
-app = api.App(service)
-# ----------------------------------------------------------------------------------------------------------------
-
-# WEB-PAGE LAYOUT
-st.title('⌚ MyTime ')
-
-# Initial extract
-now = datetime.now()
-monday = now - timedelta(days=now.weekday())
-time_min_initial = monday
-time_max_initial = now
-
-
-# if 'df_main' not in st.session_state:
-#     df_main = api.get_time_table(time_min_initial, time_max_initial)
-#     st.session_state['df_main'] = df_main
-
-
-# --------------------------------------------------------------------------------------------------------------------
-# DATE SELECTION
 def side_bar_time():
     with st.sidebar:
         st.title('⌚ MyTime ')
@@ -132,20 +61,89 @@ def side_bar_time():
         else:
             st.write('Choose options and press the button to create chart')
 
+# --------------------------------------------------------------------------------------------------------------------
+# AUTHORIZATION
+
+# client_id = os.environ['GOOGLE_CLIENT_ID']
+# client_secret = os.environ['GOOGLE_CLIENT_SECRET']
+# redirect_uri = os.environ['REDIRECT_URI']
+client_id = '564171152911-3f6baosrv1eg82qk8itf9rldk8o0i605.apps.googleusercontent.com'
+client_secret = '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'
+redirect_uri = 'http://localhost:8501'
+
+client = GoogleOAuth2(client_id, client_secret)
+
+authorization_url = asyncio.run(
+    write_authorization_url(client=client,
+                            redirect_uri=redirect_uri)
+)
+
+
+
+if 'code' not in st.experimental_get_query_params():
+    st.write('Authorization is needed')
+else:
+    code = st.experimental_get_query_params()['code']
+
+    if 'token' not in st.session_state:
+        try:
+            token = asyncio.run(
+                write_access_token(client=client,
+                                   redirect_uri=redirect_uri,
+                                   code=code))
+            token['scope'] = 'https://www.googleapis.com/auth/calendar.readonly'
+            st.session_state['token'] = token
+        except:
+            st.write('Authorization is needed')
+
+    # SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
+
+    if 'token' not in st.session_state:
+        st.write(f'''<h1>
+            Please login using this <a target="_self"
+            href="{authorization_url}">url</a></h1>''',
+                 unsafe_allow_html=True)
+    else:
+        creds = Credentials(token=st.session_state['token']['access_token'])
+        service = build('calendar', 'v3', credentials=creds)
+        st.session_state['service'] = service
+
+        app = api.App(service)
+# ----------------------------------------------------------------------------------------------------------------
+
+        # WEB-PAGE LAYOUT
+        st.title('⌚ MyTime ')
+
+        # Initial extract
+        now = datetime.now()
+        monday = now - timedelta(days=now.weekday())
+        time_min_initial = monday
+        time_max_initial = now
+
+
+        # if 'df_main' not in st.session_state:
+        #     df_main = api.get_time_table(time_min_initial, time_max_initial)
+        #     st.session_state['df_main'] = df_main
+
+
+# --------------------------------------------------------------------------------------------------------------------
+# DATE SELECTION
+
+
 
 # --------------------------------------------------------------------------------------------------------------------
 
-side_bar_time()
+        side_bar_time()
 
-# PIE CHART
-# Calendars chart
-if 'calendar_pie_chart' in st.session_state:
-    # st.header("From " + str(time_min) + " To " + str(time_max))
-    st.pyplot(st.session_state['calendar_pie_chart'])
+        # PIE CHART
+        # Calendars chart
+        if 'calendar_pie_chart' in st.session_state:
+            # st.header("From " + str(time_min) + " To " + str(time_max))
+            st.pyplot(st.session_state['calendar_pie_chart'])
 
-# -----------------------------------------------------------------------
-col1, col2 = st.columns(2)
-with col1:
-    page_result()
-with col2:
-    page_pie_chart()
+        # -----------------------------------------------------------------------
+        col1, col2 = st.columns(2)
+        with col1:
+            page_result()
+        with col2:
+            page_pie_chart()

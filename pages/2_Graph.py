@@ -2,7 +2,8 @@ import streamlit as st
 import pandas as pd
 
 import visualizer
-from MyTime import side_bar_time, from_to_header
+from MyTime import side_bar_time
+from pages import from_to_header
 
 side_bar_time()
 

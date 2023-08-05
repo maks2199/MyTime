@@ -9,7 +9,8 @@ st.set_page_config(
 # st.set_page_config(layout="wide")
 
 import visualizer
-from MyTime import side_bar_time, from_to_header
+from MyTime import side_bar_time
+from pages import from_to_header
 
 side_bar_time()
 
@@ -22,7 +23,8 @@ else:
     from_to_header(st.session_state['time_min'], st.session_state['time_max'])
 
     # Creating pie chart
-    calendars = api.get_calendars_list()
+    app = api.App(st.session_state['service'])
+    calendars = app.get_calendars_list()
     calendars_names = [x.get('summary') for x in calendars]
     selected_calendar = st.selectbox('Calendars', options=calendars_names)
 
