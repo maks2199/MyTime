@@ -6,10 +6,13 @@ st.set_page_config(
 )
 # st.set_page_config(layout="wide")
 
+import pages
+if 'df_main' not in st.session_state:
+    st.warning('Extract time from some period on the side bar')
+else:
+    pages.side_bar_time(st.session_state['app'], st.session_state['time_min_initial'], st.session_state['time_max_initial'])
 
-from MyTime import side_bar_time
-from pages import page_pie_chart
-
-side_bar_time()
-
-page_pie_chart()
+    st.header('Summary pie 🥧')
+    pages.from_to_header(st.session_state['time_min'], st.session_state['time_max'])
+    pages.pie_chart()
+    pages.result_table()
