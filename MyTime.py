@@ -61,7 +61,11 @@ authorization_url = asyncio.run(
                             redirect_uri=redirect_uri)
 )
 
-
+if 'df_main' not in st.session_state:
+    st.write(f'''<h1>
+                            Please login using this <a target="_self"
+                            href="{authorization_url}">url</a></h1>''',
+                         unsafe_allow_html=True)
 
 if 'code' not in st.experimental_get_query_params():
     st.write('Authorization is needed')
@@ -77,10 +81,7 @@ else:
             token['scope'] = 'https://www.googleapis.com/auth/calendar.readonly'
             st.session_state['token'] = token
         except:
-            st.write(f'''<h1>
-                        Please login using this <a target="_self"
-                        href="{authorization_url}">url</a></h1>''',
-                     unsafe_allow_html=True)
+
             st.write('Authorization is needed')
 
     # SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
