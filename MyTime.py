@@ -69,7 +69,8 @@ def side_bar_time():
 # redirect_uri = os.environ['REDIRECT_URI']
 client_id = '564171152911-3f6baosrv1eg82qk8itf9rldk8o0i605.apps.googleusercontent.com'
 client_secret = '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'
-redirect_uri = 'http://localhost:8501'
+# redirect_uri = 'http://localhost:8501'
+redirect_uri = 'http://aoai.ru'
 
 client = GoogleOAuth2(client_id, client_secret)
 
