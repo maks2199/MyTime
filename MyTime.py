@@ -18,7 +18,7 @@ from google.auth.transport import requests
 import api
 import analyzer
 import visualizer
-from pages import page_result, page_pie_chart
+import pages
 
 st.set_page_config(layout="wide")
 
@@ -40,26 +40,7 @@ async def write_access_token(client,
     return token
 
 
-def side_bar_time():
-    with st.sidebar:
-        st.title('⌚ MyTime ')
 
-        time_min, time_max = st.date_input("Date range", value=(time_min_initial, time_max_initial))
-
-        # --------------------------------------------------------------------------------------------------------------------
-        # BUTTON
-
-        # Pie chart
-        if st.button('Extract time :arrow_right:'):
-            st.session_state['time_min'] = time_min
-            st.session_state['time_max'] = time_max
-
-            # Getting timetable from Google Calendar API
-            with st.spinner("Getting timetable from Google Calendar"):
-                df_main = app.get_time_table(time_min, time_max)
-                st.session_state['df_main'] = df_main
-        else:
-            st.write('Choose options and press the button to create chart')
 
 # --------------------------------------------------------------------------------------------------------------------
 # AUTHORIZATION
@@ -70,6 +51,7 @@ def side_bar_time():
 client_id = '564171152911-3f6baosrv1eg82qk8itf9rldk8o0i605.apps.googleusercontent.com'
 client_secret = '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'
 # redirect_uri = 'http://localhost:8501'
+# TODOo:: change when deploy
 redirect_uri = 'http://aoai.ru'
 
 client = GoogleOAuth2(client_id, client_secret)
@@ -79,10 +61,11 @@ authorization_url = asyncio.run(
                             redirect_uri=redirect_uri)
 )
 
-st.write(f'''<h1>
-            Please login using this <a target="_self"
-            href="{authorization_url}">url</a></h1>''',
-                 unsafe_allow_html=True)
+if 'df_main' not in st.session_state:
+    st.write(f'''<h1>
+                            Please login using this <a target="_self"
+                            href="{authorization_url}">url</a></h1>''',
+                         unsafe_allow_html=True)
 
 if 'code' not in st.experimental_get_query_params():
     st.write('Authorization is needed')
@@ -98,6 +81,7 @@ else:
             token['scope'] = 'https://www.googleapis.com/auth/calendar.readonly'
             st.session_state['token'] = token
         except:
+
             st.write('Authorization is needed')
 
     # SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
@@ -110,6 +94,7 @@ else:
         st.session_state['service'] = service
 
         app = api.App(service)
+        st.session_state['app'] = app
 # ----------------------------------------------------------------------------------------------------------------
 
         # WEB-PAGE LAYOUT
@@ -120,7 +105,8 @@ else:
         monday = now - timedelta(days=now.weekday())
         time_min_initial = monday
         time_max_initial = now
-
+        st.session_state['time_min_initial'] = time_min_initial
+        st.session_state['time_max_initial'] = time_max_initial
 
         # if 'df_main' not in st.session_state:
         #     df_main = api.get_time_table(time_min_initial, time_max_initial)
@@ -134,7 +120,7 @@ else:
 
 # --------------------------------------------------------------------------------------------------------------------
 
-        side_bar_time()
+        pages.side_bar_time(app, time_min_initial, time_max_initial)
 
         # PIE CHART
         # Calendars chart
@@ -143,8 +129,20 @@ else:
             st.pyplot(st.session_state['calendar_pie_chart'])
 
         # -----------------------------------------------------------------------
-        col1, col2 = st.columns(2)
-        with col1:
-            page_result()
-        with col2:
-            page_pie_chart()
+        if 'df_main' not in st.session_state:
+            st.warning('Extract time from some period on the side bar')
+        else:
+            pages.from_to_header(st.session_state['time_min'], st.session_state['time_max'])
+            col1, col2 = st.columns(2)
+            with col1:
+                pages.pie_chart()
+            with col2:
+                pages.bar_chart_clickable()
+
+            col1, col2 = st.columns(2)
+            with col1:
+                pages.line_chart()
+            with col2:
+                pages.bar_chart()
+
+            pages.result_table()

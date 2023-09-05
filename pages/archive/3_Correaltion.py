@@ -4,9 +4,9 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 import visualizer
-from MyTime import side_bar_time
+import pages
 
-side_bar_time()
+# side_bar_time()
 
 if 'df_main' not in st.session_state:
     st.warning('Extract time from some period on the side bar')
