@@ -5,6 +5,7 @@ import streamlit as st
 
 import visualizer
 
+
 def extract_time(app, time_min, time_max):
     st.session_state['time_min'] = time_min
     st.session_state['time_max'] = time_max
@@ -100,6 +101,23 @@ def result_table():
         groped_table = visualizer.get_pretty_calendars_table(df_main, selected_time_format)
 
         st.table(groped_table)
+
+
+def events_table(app):
+    if 'df_main' not in st.session_state:
+        st.warning('Extract time from some period on the side bar')
+    else:
+        df_main = st.session_state['df_main']
+
+        calendar_options = [x.get('summary') for x in app.get_calendars_list()]
+        selected_calendar = st.selectbox('Calendar', calendar_options)
+
+        time_options = ['Hours', 'Minutes', 'Seconds']
+        selected_time_format = st.selectbox('Time format', time_options)
+
+        table = visualizer.get_calendar_events_table(df_main, selected_calendar, selected_time_format)
+
+        st.table(table)
 
 
 def pie_chart():

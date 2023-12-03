@@ -162,7 +162,7 @@ class App():
                 #     event_name = '-'
                 # else:
                 #     event_name = event_['summary']
-                row['Event'] = event_.get('summary')
+                row['Event'] = event_.get('summary').strip()
                 # print(calculate_event_duration(event_))
                 row['Duration'] = self.calculate_event_duration(event_)
                 # pprint(event_)
