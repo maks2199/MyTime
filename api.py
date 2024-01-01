@@ -4,6 +4,8 @@ import datetime
 from datetime import datetime
 import os.path
 from pprint import pprint
+import asyncio
+from httpx_oauth.clients.google import GoogleOAuth2
 
 from google.auth.transport.requests import Request
 from google.oauth2.credentials import Credentials
@@ -20,10 +22,15 @@ from http import cookies
 import matplotlib.pyplot as plt
 
 
-class App():
+def main():
+    ...
+
+
+class App:
 
     def __init__(self, service):
         self.service = service
+
 
     def get_ten_upcoming_events(self, calendar_id):
         # Call the Calendar API
@@ -43,9 +50,20 @@ class App():
 
     def get_calendar_events(self, calendar_id, time_min, time_max):
         """Returns events from time_min to time_max for calendar by its id"""
-        events_result = self.service.events().list(calendarId=calendar_id, singleEvents=True,
-                                              timeMin=time_min, timeMax=time_max).execute()
-        events = events_result.get('items', [])
+        page_token = None
+        events = []
+
+        while True:
+            events_result = self.service.events().list(calendarId=calendar_id,
+                                                       singleEvents=True,
+                                                       timeMin=time_min,
+                                                       timeMax=time_max,
+                                                       pageToken=page_token).execute()
+            events += events_result.get('items', [])
+            page_token = events_result.get('nextPageToken')
+            if not page_token:
+                break
+
         return events
 
     def calculate_event_duration(self, event):
@@ -100,8 +118,6 @@ class App():
         print("------------------")
         print("GETTING TIME TABLE")
         print("------------------")
-        # Printing progress bar
-        # i = 0
 
         # Converting time to needed format
         # Adding time to date from streamlit
@@ -140,6 +156,8 @@ class App():
 
             # print('EVENTS:')
             events_ = self.get_calendar_events(id_, time_min, time_max)
+            # print(events_)
+
 
             # print()
             # print("Events[0]: ")
@@ -165,6 +183,8 @@ class App():
                 row['Event'] = event_.get('summary').strip()
                 # print(calculate_event_duration(event_))
                 row['Duration'] = self.calculate_event_duration(event_)
+                if self.duration_to_seconds(row['Duration']) == 0.0:
+                    continue
                 # pprint(event_)
                 # print(type(row['Duration']))
                 row['Duration seconds'] = self.duration_to_seconds(row['Duration'])
@@ -174,6 +194,8 @@ class App():
                 table.append(row)
 
         df = pd.DataFrame(table)
+        # print(df)
+        # print(df.info())
 
         total_event_seconds = df['Duration seconds'].sum()
         # print()
@@ -193,6 +215,7 @@ class App():
         print()
         print("Raw data frame: ")
         print(df)
+        print(df.info())
 
         df.to_csv('raw_time.csv')
 
@@ -231,3 +254,7 @@ class App():
         # plt.show()
 
         return table_by_days
+
+
+if __name__ == '__main__':
+    main()
