@@ -183,11 +183,14 @@ class App:
                 row['Event'] = event_.get('summary').strip()
                 # print(calculate_event_duration(event_))
                 row['Duration'] = self.calculate_event_duration(event_)
-                if self.duration_to_seconds(row['Duration']) == 0.0:
+                row['Duration seconds'] = self.duration_to_seconds(row['Duration'])
+                if row['Duration seconds'] == 0.0:
+                    continue
+                if row['Duration seconds'] >= 86400.0:
                     continue
                 # pprint(event_)
                 # print(type(row['Duration']))
-                row['Duration seconds'] = self.duration_to_seconds(row['Duration'])
+
                 row['Start time'] = self.get_event_start_time(event_)
                 row['End time'] = self.get_event_end_time(event_)
 
