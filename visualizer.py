@@ -112,6 +112,8 @@ def get_calendar_events_table(df_main, calendar, time_format):
     # Percentage
     df_result['Percent'] = (df_result['Duration'] / df_result['Duration'].sum()) * 100
 
+    df_result = df_result.reset_index()
+
     return df_result
 
 
@@ -123,10 +125,21 @@ def create_calendar_pie_chart(df_main):
 
     calendar_names = df_grouped_calendars['Calendar'].tolist()
     calendar_durations = df_grouped_calendars['Duration seconds'].tolist()
-    # calendar_colors = df_grouped_calendars['Calendar color'].tolist()
+    # percent = [100. * cd / sum(calendar_durations) for cd in calendar_durations]
+    # labels = [cd if (100. * cd / sum(calendar_durations)) >= 5 else '' for cd in calendar_durations]
+    # labels = []
+    # for i in range(len(calendar_names)):
+    #     if percent[i] >= 5:
+    #         labels.append(calendar_names[i])
+    #     else:
+    #         labels.append('')
+    #     i += 1
+    colors = df_grouped_calendars['Calendar color'].tolist()
 
     # Colors
-    colors = sns.color_palette('Paired')
+    # colors = sns.color_palette('Paired', n_colors=20)
+    # colors = sns.color_palette('hls')
+    # colors = sns.color_palette()
 
     # Moving some slices
     explode = [0.0 if el == max(calendar_durations) else 0.0 for el in calendar_durations]
@@ -136,20 +149,80 @@ def create_calendar_pie_chart(df_main):
     patches, texts, autotexts = ax.pie(
         calendar_durations,
         labels=calendar_names,
-        autopct='%1.1f%%',
+        autopct='%1.0f%%',
+        # autopct=lambda pct: '{:1.1f}%'.format(pct) if pct > 5 else '',
         shadow=False,
         startangle=90,
         colors=colors,
         explode=explode,
         pctdistance=0.85,
-        labeldistance=1.1
+        labeldistance=1.1,
+        wedgeprops={"edgecolor": "none", 'linewidth': 1, 'linestyle': 'solid', 'antialiased': False}
     )
+
+    # Removing little pieces
+    threshold = 2
+    for label, pct_label in zip(texts, autotexts):
+        pct_value = pct_label.get_text().rstrip('%')
+        if float(pct_value) < threshold:
+            label.set_text('')
+            pct_label.set_text('')
 
     # Text color
     for text in texts:
         text.set_color('black')
     for autotext in autotexts:
         autotext.set_color('white')
+    sns.set(font="Sans serif")
+
+    # ------
+    # Annotations
+
+    # ------
+
+    ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
+
+    # Legend
+    ax.legend(bbox_to_anchor=(1.1, 1.05))
+
+    # draw hole in center
+    centre_circle = plt.Circle((0, 0), 0.70, fc='white')
+    fig = plt.gcf()
+    fig.gca().add_artist(centre_circle)
+
+    return fig
+
+def create_events_pie_chart(df_events):
+    event_names = df_events['Event'].tolist()
+    event_durations = df_events['Duration'].tolist()
+
+    # Pie chart
+    fig, ax = plt.subplots()
+    patches, texts, autotexts = ax.pie(
+        event_durations,
+        labels=event_names,
+        autopct='%1.0f%%',
+        # autopct=lambda pct: '{:1.1f}%'.format(pct) if pct > 5 else '',
+        shadow=False,
+        startangle=90,
+        pctdistance=0.85,
+        labeldistance=1.1,
+    )
+
+    # Removing little pieces
+    threshold = 2
+    for label, pct_label in zip(texts, autotexts):
+        pct_value = pct_label.get_text().rstrip('%')
+        if float(pct_value) < threshold:
+            label.set_text('')
+            pct_label.set_text('')
+
+    # Text color
+    for text in texts:
+        text.set_color('black')
+    for autotext in autotexts:
+        autotext.set_color('white')
+    sns.set(font="Sans serif")
 
     # ------
     # Annotations

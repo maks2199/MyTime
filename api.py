@@ -184,7 +184,7 @@ class App:
                 # print(calculate_event_duration(event_))
                 row['Duration'] = self.calculate_event_duration(event_)
                 row['Duration seconds'] = self.duration_to_seconds(row['Duration'])
-                if row['Duration seconds'] == 0.0:
+                if row['Duration seconds'] <= 1.0:
                     continue
                 if row['Duration seconds'] >= 86400.0:
                     continue

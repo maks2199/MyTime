@@ -119,6 +119,10 @@ def events_table(app):
 
         st.table(table)
 
+        pie_chart_ = visualizer.create_events_pie_chart(table)
+
+        st.pyplot(pie_chart_)
+
 
 def pie_chart():
     if 'df_main' not in st.session_state:
