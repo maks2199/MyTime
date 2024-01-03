@@ -192,16 +192,21 @@ def create_calendar_pie_chart(df_main):
 
     return fig
 
+
 def create_events_pie_chart(df_events):
     event_names = df_events['Event'].tolist()
     event_durations = df_events['Duration'].tolist()
+
+    def absolute_value(val):
+        a = str(round(val / 100. * sum(event_durations)))
+        return ' '.join([str(a), 'ч'])
 
     # Pie chart
     fig, ax = plt.subplots()
     patches, texts, autotexts = ax.pie(
         event_durations,
         labels=event_names,
-        autopct='%1.0f%%',
+        autopct=absolute_value,
         # autopct=lambda pct: '{:1.1f}%'.format(pct) if pct > 5 else '',
         shadow=False,
         startangle=90,
@@ -210,9 +215,10 @@ def create_events_pie_chart(df_events):
     )
 
     # Removing little pieces
-    threshold = 2
+    percent = 5
+    threshold = percent * sum(event_durations)/100
     for label, pct_label in zip(texts, autotexts):
-        pct_value = pct_label.get_text().rstrip('%')
+        pct_value = pct_label.get_text().rstrip('ч')
         if float(pct_value) < threshold:
             label.set_text('')
             pct_label.set_text('')

@@ -2,6 +2,7 @@ from datetime import datetime, timedelta
 
 import pandas as pd
 import streamlit as st
+import matplotlib.colors as mcolors
 
 import visualizer
 
