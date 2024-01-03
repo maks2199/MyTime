@@ -29,3 +29,17 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/mytime
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pull from docker and run container
+        uses: appleboy/ssh-action@master
+        with: 
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          port: ${{ secrets.PORT }}
+          script: |
+            docker pull -a maks2199/mytime
+            docker run -p 80:8501 maks2199/mytime
