@@ -19,6 +19,8 @@ import api
 import analyzer
 import visualizer
 import pages
+import credentials
+import configs
 
 st.set_page_config(layout="wide")
 
@@ -48,14 +50,14 @@ async def write_access_token(client,
 # client_id = os.environ['GOOGLE_CLIENT_ID']
 # client_secret = os.environ['GOOGLE_CLIENT_SECRET']
 # redirect_uri = os.environ['REDIRECT_URI']
-client_id = '564171152911-3f6baosrv1eg82qk8itf9rldk8o0i605.apps.googleusercontent.com'
-client_secret = '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'
+client_id = credentials.client_id
+client_secret = credentials.client_secret
 
 # Local
 # redirect_uri = 'http://localhost:8501'
 # TODOo:: change when deploy
 # Docker
-redirect_uri = 'http://aoai.ru'
+redirect_uri = configs.redirect_uri
 
 client = GoogleOAuth2(client_id, client_secret)
 
@@ -149,3 +151,6 @@ else:
                 pages.bar_chart()
 
             pages.result_table()
+
+
+pages.footer()

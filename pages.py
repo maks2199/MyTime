@@ -218,3 +218,26 @@ def bar_chart_clickable():
     # ---
 
     st.altair_chart(visualizer.create_altair_bar_char_calendars(df_main))
+
+
+def footer():
+    footer_ = """
+    <style>
+        .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: white;
+        color: black;
+        text-align: center;
+        }
+    </style>
+    <div class="footer">
+      <p style='color:grey'>
+      contact <a style='color:grey' href="mailto: tachkov.maksim@gmail.com" target="_blank">tachkov.maksim@gmail.com</a>
+      </p>
+    </div>
+    """
+    st.markdown(footer_, unsafe_allow_html=True)
+
