@@ -47,17 +47,17 @@ async def write_access_token(client,
 # --------------------------------------------------------------------------------------------------------------------
 # AUTHORIZATION
 
-# client_id = os.environ['GOOGLE_CLIENT_ID']
-# client_secret = os.environ['GOOGLE_CLIENT_SECRET']
-# redirect_uri = os.environ['REDIRECT_URI']
-client_id = credentials.client_id
-client_secret = credentials.client_secret
+client_id = os.environ['GOOGLE_CLIENT_ID']
+client_secret = os.environ['GOOGLE_CLIENT_SECRET']
+redirect_uri = os.environ['REDIRECT_URI']
+# client_id = credentials.client_id
+# client_secret = credentials.client_secret
 
 # Local
 # redirect_uri = 'http://localhost:8501'
 # TODOo:: change when deploy
 # Docker
-redirect_uri = configs.redirect_uri
+# redirect_uri = configs.redirect_uri
 
 client = GoogleOAuth2(client_id, client_secret)
 
