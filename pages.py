@@ -118,6 +118,8 @@ def events_table(app):
 
         table = visualizer.get_calendar_events_table(df_main, selected_calendar, selected_time_format)
 
+        table_durations = table[['Event', 'Duration', 'Percent']]
+
         st.table(table)
 
         pie_chart_ = visualizer.create_events_pie_chart(table)

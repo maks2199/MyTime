@@ -100,9 +100,10 @@ def get_calendar_events_table(df_main, calendar, time_format):
     elif time_format == 'Hours':
         k = 3600
 
-    df_result = df_main.loc[df_main['Calendar'] == calendar, ['Event', 'Duration seconds']]
-    df_result = df_result.groupby('Event').agg(
+    df = df_main.loc[df_main['Calendar'] == calendar, ['Event', 'Duration seconds']]
+    df_result = df.groupby('Event').agg(
         {'Duration seconds': 'sum'})
+    df_result['Count'] = df.groupby('Event')['Event'].count()
     df_result = df_result.reset_index()
     df_result['Duration seconds'] = df_result['Duration seconds'].apply(lambda x: round((x / k) * 2) / 2)
     df_result = df_result.rename(columns={'Duration seconds': 'Duration'})
@@ -113,6 +114,9 @@ def get_calendar_events_table(df_main, calendar, time_format):
     df_result['Percent'] = (df_result['Duration'] / df_result['Duration'].sum()) * 100
 
     df_result = df_result.reset_index()
+
+    print('DF EVENTS')
+    print(df_result)
 
     return df_result
 
