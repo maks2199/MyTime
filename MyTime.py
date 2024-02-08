@@ -19,7 +19,7 @@ import api
 import analyzer
 import visualizer
 import pages
-import credentials
+
 import configs
 
 st.set_page_config(layout="wide")
@@ -54,6 +54,7 @@ redirect_uri = os.environ['REDIRECT_URI']
 # client_secret = credentials.client_secret
 
 # Local
+# import credentials
 # redirect_uri = 'http://localhost:8501'
 # TODOo:: change when deploy
 # Docker
