@@ -35,9 +35,7 @@ jobs:
     needs: build
     steps:
       - name: test
-        with:
-          script:
-            echo "testing..."
+      - run: echo "testing"
   
   deploy:
     runs-on: ubuntu-latest
