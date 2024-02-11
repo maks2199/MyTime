@@ -30,9 +30,18 @@ jobs:
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/mytime
 
-  deploy:
+  test:
     runs-on: ubuntu-latest
     needs: build
+    steps:
+      - name: test
+        with:
+          script:
+            echo "testing..."
+  
+  deploy:
+    runs-on: ubuntu-latest
+    needs: test
     steps:
       - name: pull from docker and run container
         uses: appleboy/ssh-action@master
