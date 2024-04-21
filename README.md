@@ -13,3 +13,4 @@ App for analyze your time spend from Google Calendar
 * main.py -- 
 * quickstart.py -- example from Google Calendar API
 * token.json -- information for authorization in Google. Delete this, when expired
+
