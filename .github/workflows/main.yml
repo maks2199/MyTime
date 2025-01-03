@@ -51,4 +51,4 @@ jobs:
           script: |
             docker pull -a maks2199/mytime
             docker kill $(docker ps -q) # Kill all containers
-            docker run --rm -d -p 80:8501 maks2199/mytime
+            docker run --rm -d -p 8501:8501 maks2199/mytime
