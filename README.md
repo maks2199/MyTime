@@ -1,16 +1,20 @@
-# ⌚ MyTime 
-App for analyze your time spend from Google Calendar
+# ⌚ MyTime
 
-## Description of files and directories
+App for analyzing your time spent using data from Google Calendar.
 
-* .idea\ -- smth from Pycharm  
-* 10_Input_calendars\ -- manually exported calendars from Google Calendar  
-* MyTime.py -- script for web-site using streamlit  
-* README.md -- this file
-* api.py -- script that works with Google Calendar API, gets and calculates time  
-* credentials.json -- information for authorization in Google  
-* executables.py -- script that works with raw .ics files  
-* main.py -- 
-* quickstart.py -- example from Google Calendar API
-* token.json -- information for authorization in Google. Delete this, when expired
+## Overview
 
+MyTime is a Python-based application that helps you analyze how you spend your time by processing data from Google Calendar. It uses the Google Calendar API to fetch and calculate time usage, and provides a user-friendly interface using Streamlit.
+
+## Features
+
+- Fetch and process Google Calendar data.
+- Analyze time spent on various activities.
+- Export and process raw `.ics` files.
+- Simple and intuitive web interface.
+
+## Prerequisites
+
+- Python 3.8 or higher
+- Google Calendar API credentials
+- Streamlit library installed

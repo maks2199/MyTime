@@ -1,1 +1,6 @@
 raw_time.csv
+.venv
+_Calendars
+_Debug
+token.json
+credentials.json

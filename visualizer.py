@@ -127,34 +127,29 @@ def get_calendar_events_table(df_main, calendar, time_format):
 def create_calendar_pie_chart(df_main):
     df_grouped_calendars = get_groped_calendars(df_main)
 
+    # Отладка: проверяем, что у нас в данных
+    print("DEBUG: Grouped calendars:")
+    print(df_grouped_calendars)
+
+    # Убираем отрицательные или нулевые значения
+    df_grouped_calendars = df_grouped_calendars[df_grouped_calendars['Duration seconds'] > 0]
+
+    if df_grouped_calendars.empty:
+        raise ValueError("Нет данных для построения диаграммы (все длительности <= 0).")
+
     calendar_names = df_grouped_calendars['Calendar'].tolist()
     calendar_durations = df_grouped_calendars['Duration seconds'].tolist()
-    # percent = [100. * cd / sum(calendar_durations) for cd in calendar_durations]
-    # labels = [cd if (100. * cd / sum(calendar_durations)) >= 5 else '' for cd in calendar_durations]
-    # labels = []
-    # for i in range(len(calendar_names)):
-    #     if percent[i] >= 5:
-    #         labels.append(calendar_names[i])
-    #     else:
-    #         labels.append('')
-    #     i += 1
     colors = df_grouped_calendars['Calendar color'].tolist()
 
-    # Colors
-    # colors = sns.color_palette('Paired', n_colors=20)
-    # colors = sns.color_palette('hls')
-    # colors = sns.color_palette()
-
-    # Moving some slices
+    # Двигаем самый большой кусок
     explode = [0.0 if el == max(calendar_durations) else 0.0 for el in calendar_durations]
 
-    # Calendars chart
+    # Создаем диаграмму
     fig, ax = plt.subplots()
     patches, texts, autotexts = ax.pie(
         calendar_durations,
         labels=calendar_names,
         autopct='%1.0f%%',
-        # autopct=lambda pct: '{:1.1f}%'.format(pct) if pct > 5 else '',
         shadow=False,
         startangle=90,
         colors=colors,
@@ -164,7 +159,7 @@ def create_calendar_pie_chart(df_main):
         wedgeprops={"edgecolor": "none", 'linewidth': 1, 'linestyle': 'solid', 'antialiased': False}
     )
 
-    # Removing little pieces
+    # Убираем маленькие куски (<2%)
     threshold = 2
     for label, pct_label in zip(texts, autotexts):
         pct_value = pct_label.get_text().rstrip('%')
@@ -172,29 +167,25 @@ def create_calendar_pie_chart(df_main):
             label.set_text('')
             pct_label.set_text('')
 
-    # Text color
+    # Цвет текста
     for text in texts:
         text.set_color('black')
     for autotext in autotexts:
         autotext.set_color('white')
     sns.set(font="Sans serif")
 
-    # ------
-    # Annotations
+    ax.axis('equal')  # Рисуем круг
 
-    # ------
-
-    ax.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
-
-    # Legend
+    # Легенда
     ax.legend(bbox_to_anchor=(1.1, 1.05))
 
-    # draw hole in center
+    # Рисуем дырку в центре
     centre_circle = plt.Circle((0, 0), 0.70, fc='white')
     fig = plt.gcf()
     fig.gca().add_artist(centre_circle)
 
     return fig
+
 
 
 def create_events_pie_chart(df_events):
