@@ -6,6 +6,15 @@ App for analyzing your time spent using data from Google Calendar.
 
 MyTime is a Python-based application that helps you analyze how you spend your time by processing data from Google Calendar. It uses the Google Calendar API to fetch and calculate time usage, and provides a user-friendly interface using Streamlit.
 
+## Demo
+
+https://mytime.aoai.ru/
+
+![](docs/screen1.jpg)
+![](docs/screen2.jpg)
+![](docs/screen3.jpg)
+![](docs/screen4.jpg)
+
 ## Features
 
 - Fetch and process Google Calendar data.
